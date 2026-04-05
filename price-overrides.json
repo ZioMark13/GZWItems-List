@@ -18,6 +18,10 @@
   "heavenly-perfume-bottle": {
     "weight": 0.15
   },
+  "maknav-iced-tea": {
+    "price": 11,
+    "energy": "+10"
+  },
   "noakon-water-1-5-l": {
     "price": 16
   },
