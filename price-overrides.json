@@ -2,5 +2,8 @@
   "azart-p1-radio": {
     "price": 1000,
     "imageUrl": ""
+  },
+  "heavenly-perfume-bottle": {
+    "weight": 0.15
   }
 }
