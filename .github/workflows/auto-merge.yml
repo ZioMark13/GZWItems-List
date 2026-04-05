@@ -13,6 +13,10 @@ on:
   issues:
     types: [labeled]
 
+concurrency:
+  group: auto-merge
+  cancel-in-progress: false
+
 jobs:
   merge-contribution:
     if: github.event.label.name == 'approved'
@@ -83,6 +87,7 @@ jobs:
           git add price-overrides.json
           git diff --cached --quiet && echo "No changes to commit" && exit 0
           git commit -m "Update $ITEM_NAME from contribution #$ISSUE_NUMBER"
+          git pull --rebase
           git push
 
       - name: Close issue with comment
