@@ -1,10 +1,16 @@
 {
+  "aques-water-1-5-l": {
+    "price": 16
+  },
   "azart-p1-radio": {
     "price": 1000,
     "imageUrl": ""
   },
   "biometric-access-card": {
     "price": 2000
+  },
+  "coco-jumbo-coconut-juice-drink": {
+    "price": 2
   },
   "energy-bar-nuts-and-fruits": {
     "hydration": "0"
