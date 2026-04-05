@@ -1,0 +1,104 @@
+# Copy this file to your GZWItems-List repo at:
+# .github/workflows/auto-merge.yml
+#
+# When you add the "approved" label to an issue, this action:
+# 1. Extracts the JSON code block from the issue body
+# 2. Merges it into price-overrides.json
+# 3. Commits and pushes the change
+# 4. Closes the issue with a comment
+
+name: Auto-merge approved contributions
+
+on:
+  issues:
+    types: [labeled]
+
+jobs:
+  merge-contribution:
+    if: github.event.label.name == 'approved'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Extract and merge JSON
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issue = context.payload.issue;
+            const body = issue.body || '';
+
+            // Extract JSON from the code block
+            const match = body.match(/```json\n([\s\S]*?)\n```/);
+            if (!match) {
+              core.setFailed('No JSON code block found in issue body.');
+              return;
+            }
+
+            let submitted;
+            try {
+              submitted = JSON.parse(match[1]);
+            } catch (e) {
+              core.setFailed(`Invalid JSON in issue: ${e.message}`);
+              return;
+            }
+
+            // Read existing overrides
+            const fs = require('fs');
+            const filePath = 'price-overrides.json';
+            let overrides = {};
+            if (fs.existsSync(filePath)) {
+              overrides = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+            }
+
+            // Merge: for each submitted item, merge fields into existing entry
+            for (const [itemId, fields] of Object.entries(submitted)) {
+              if (!overrides[itemId]) {
+                overrides[itemId] = {};
+              }
+              Object.assign(overrides[itemId], fields);
+            }
+
+            // Write back sorted by key
+            const sorted = Object.keys(overrides).sort().reduce((acc, key) => {
+              acc[key] = overrides[key];
+              return acc;
+            }, {});
+
+            fs.writeFileSync(filePath, JSON.stringify(sorted, null, 2) + '\n');
+
+            // Get the item name from issue title
+            const itemName = issue.title.replace(/^\[Contribution\]\s*/, '').split('—')[0].trim();
+            core.exportVariable('ITEM_NAME', itemName);
+            core.exportVariable('ISSUE_NUMBER', issue.number);
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add price-overrides.json
+          git diff --cached --quiet && echo "No changes to commit" && exit 0
+          git commit -m "Update $ITEM_NAME from contribution #$ISSUE_NUMBER"
+          git push
+
+      - name: Close issue with comment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issue = context.payload.issue;
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue.number,
+              body: `Merged into \`price-overrides.json\` and committed. Thanks for contributing! 🎉`
+            });
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue.number,
+              state: 'closed'
+            });
