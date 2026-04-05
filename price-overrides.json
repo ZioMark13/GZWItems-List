@@ -12,6 +12,9 @@
   "heavenly-perfume-bottle": {
     "weight": 0.15
   },
+  "noakon-water-1-5-l": {
+    "price": 16
+  },
   "sunrise-cola": {
     "price": 3,
     "energy": "+15"
