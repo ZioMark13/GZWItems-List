@@ -3,6 +3,9 @@
     "price": 1000,
     "imageUrl": ""
   },
+  "energy-bar-nuts-and-fruits": {
+    "hydration": "0"
+  },
   "heavenly-perfume-bottle": {
     "weight": 0.15
   }
