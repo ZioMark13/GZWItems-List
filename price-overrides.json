@@ -11,5 +11,9 @@
   },
   "heavenly-perfume-bottle": {
     "weight": 0.15
+  },
+  "sunrise-cola": {
+    "price": 3,
+    "energy": "+15"
   }
 }
