@@ -3,6 +3,9 @@
     "price": 1000,
     "imageUrl": ""
   },
+  "biometric-access-card": {
+    "price": 2000
+  },
   "energy-bar-nuts-and-fruits": {
     "hydration": "0"
   },
