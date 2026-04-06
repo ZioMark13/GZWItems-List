@@ -18,6 +18,10 @@
   "energy-bar-nuts-and-fruits": {
     "hydration": "0"
   },
+  "flexible-splint": {
+    "price": 10,
+    "weight": 0.13
+  },
   "heavenly-perfume-bottle": {
     "weight": 0.15
   },
