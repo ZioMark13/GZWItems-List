@@ -141,3 +141,10 @@ jobs:
               issue_number: issue.number,
               state: 'closed'
             });
+
+      - name: Revalidate site cache
+        run: |
+          curl -s -X POST "${{ secrets.SITE_URL }}/api/revalidate" \
+            -H "Authorization: Bearer ${{ secrets.REVALIDATE_SECRET }}" \
+            -H "Content-Type: application/json" \
+            || echo "Revalidation skipped (site may not be configured yet)"
