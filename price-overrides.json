@@ -31,5 +31,8 @@
   "sunrise-cola": {
     "price": 3,
     "energy": "+15"
+  },
+  "touchdown-lemon-soda": {
+    "price": 3
   }
 }
