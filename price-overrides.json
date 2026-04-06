@@ -2,6 +2,10 @@
   "aques-water-1-5-l": {
     "price": 16
   },
+  "arf-trauma-bandage-4": {
+    "price": 9,
+    "weight": 0.07
+  },
   "azart-p1-radio": {
     "price": 1000,
     "imageUrl": ""
