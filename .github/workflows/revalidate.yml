@@ -12,13 +12,14 @@ jobs:
     steps:
       - name: Revalidate site cache
         run: |
-          curl -s -X POST "${{ secrets.SITE_URL }}/api/revalidate" \
+          curl -X POST "${{ secrets.SITE_URL }}/api/revalidate" \
             -H "Authorization: Bearer ${{ secrets.REVALIDATE_SECRET }}" \
             -H "Content-Type: application/json" \
-            || echo "Revalidation failed"
+            -w "\nStatus: %{http_code}\n"
 
       - name: Comment on issue
         uses: actions/github-script@v7
+        if: success()
         with:
           script: |
             await github.rest.issues.createComment({
