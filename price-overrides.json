@@ -16,6 +16,10 @@
   "coco-jumbo-coconut-juice-drink": {
     "price": 2
   },
+  "combat-tourniquet": {
+    "price": 24,
+    "weight": 0.09
+  },
   "dark-star-iced-coffee": {
     "price": 6
   },
