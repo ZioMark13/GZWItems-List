@@ -6,25 +6,44 @@ on:
 
 jobs:
   revalidate:
-    if: github.event.label.name == 'deployed'
+    # Only run when the exact label "deployed" is added
+    if: ${{ github.event.label.name == 'deployed' }}
+
     runs-on: ubuntu-latest
 
     steps:
       - name: Revalidate site cache
+        id: revalidate
         run: |
-          curl -X POST "${{ secrets.SITE_URL }}/api/revalidate" \
+          echo "Revalidating cache at ${{ secrets.SITE_URL }}/api/revalidate"
+
+          response=$(curl -X POST "${{ secrets.SITE_URL }}/api/revalidate" \
             -H "Authorization: Bearer ${{ secrets.REVALIDATE_SECRET }}" \
             -H "Content-Type: application/json" \
-            -w "\nStatus: %{http_code}\n"
+            -w "\nHTTP_STATUS:%{http_code}" \
+            -s)
+
+          http_code=$(echo "$response" | grep -o 'HTTP_STATUS:[0-9]*' | cut -d':' -f2 || echo "000")
+
+          echo "Status: $http_code"
+
+          if [ "$http_code" = "200" ] || [ "$http_code" = "202" ]; then
+            echo "✅ Cache revalidation successful"
+            echo "success=true" >> $GITHUB_OUTPUT
+          else
+            echo "❌ Cache revalidation failed with status $http_code"
+            echo "success=false" >> $GITHUB_OUTPUT
+            exit 1
+          fi
 
       - name: Comment on issue
+        if: success() && steps.revalidate.outputs.success == 'true'
         uses: actions/github-script@v7
-        if: success()
         with:
           script: |
             await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: context.payload.issue.number,
-              body: 'Site cache revalidated. ✅'
+              body: 'Site cache revalidated successfully. ✅'
             });
