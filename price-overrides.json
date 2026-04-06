@@ -23,6 +23,10 @@
   "dark-star-iced-coffee": {
     "price": 6
   },
+  "emergency-suture-kit": {
+    "price": 54,
+    "weight": 0.2
+  },
   "energy-bar-nuts-and-fruits": {
     "hydration": "0"
   },
