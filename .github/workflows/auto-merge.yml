@@ -13,6 +13,10 @@ on:
   issues:
     types: [labeled]
 
+concurrency:
+  group: merge-contribution
+  cancel-in-progress: false
+
 jobs:
   merge-contribution:
     if: github.event.label.name == 'approved'
@@ -23,7 +27,7 @@ jobs:
 
     steps:
       - name: Random delay to stagger parallel runs
-        run: sleep $((RANDOM % 30))
+        run: sleep $((RANDOM % 120))
 
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -69,7 +73,7 @@ jobs:
             const fs = require('fs');
             const submitted = JSON.parse(process.env.SUBMITTED_JSON);
             const filePath = 'price-overrides.json';
-            const maxAttempts = 10;
+            const maxAttempts = 20;
 
             execSync('git config user.name "github-actions[bot]"');
             execSync('git config user.email "github-actions[bot]@users.noreply.github.com"');
@@ -122,7 +126,7 @@ jobs:
               }
             }
 
-            core.setFailed('Failed after 5 attempts');
+            core.setFailed('Failed after 20 attempts');
 
       - name: Close issue with comment
         uses: actions/github-script@v7
@@ -142,9 +146,3 @@ jobs:
               state: 'closed'
             });
 
-      - name: Revalidate site cache
-        run: |
-          curl -s -X POST "${{ secrets.SITE_URL }}/api/revalidate" \
-            -H "Authorization: Bearer ${{ secrets.REVALIDATE_SECRET }}" \
-            -H "Content-Type: application/json" \
-            || echo "Revalidation skipped (site may not be configured yet)"
