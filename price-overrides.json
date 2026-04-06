@@ -25,6 +25,10 @@
   "heavenly-perfume-bottle": {
     "weight": 0.15
   },
+  "large-blood-bag": {
+    "price": 294,
+    "weight": 2.1
+  },
   "m-f-a-t-tourniquet": {
     "price": 19,
     "weight": 0.08
