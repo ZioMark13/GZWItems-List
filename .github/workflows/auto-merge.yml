@@ -1,12 +1,3 @@
-# Copy this file to your GZWItems-List repo at:
-# .github/workflows/auto-merge.yml
-#
-# When you add the "approved" label to an issue, this action:
-# 1. Extracts the JSON code block from the issue body
-# 2. Merges it into price-overrides.json
-# 3. Commits and pushes the change
-# 4. Closes the issue with a comment
-
 name: Auto-merge approved contributions
 
 on:
@@ -57,7 +48,7 @@ jobs:
 
             core.setOutput('json', match[1]);
 
-            const itemName = issue.title.replace(/^\[Contribution\]\s*/, '').split('—')[0].trim();
+            const itemName = issue.title.replace(/\^\[Contribution\]\s*/, '').split('—')[0].trim();
             core.setOutput('item_name', itemName);
             core.setOutput('issue_number', issue.number);
 
@@ -73,63 +64,68 @@ jobs:
             const fs = require('fs');
             const submitted = JSON.parse(process.env.SUBMITTED_JSON);
             const filePath = 'price-overrides.json';
-            const maxAttempts = 20;
+            const maxAttempts = 25;
 
             execSync('git config user.name "github-actions[bot]"');
             execSync('git config user.email "github-actions[bot]@users.noreply.github.com"');
 
             for (let attempt = 1; attempt <= maxAttempts; attempt++) {
-              // Pull latest
-              execSync('git pull --rebase origin master');
-
-              // Read current file (may have been updated by another run)
-              let overrides = {};
-              if (fs.existsSync(filePath)) {
-                overrides = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-              }
-
-              // Merge submitted data
-              for (const [itemId, fields] of Object.entries(submitted)) {
-                if (!overrides[itemId]) overrides[itemId] = {};
-                Object.assign(overrides[itemId], fields);
-              }
-
-              // Write sorted
-              const sorted = Object.keys(overrides).sort().reduce((acc, key) => {
-                acc[key] = overrides[key];
-                return acc;
-              }, {});
-              fs.writeFileSync(filePath, JSON.stringify(sorted, null, 2) + '\n');
-
-              // Stage and check for changes
-              execSync('git add price-overrides.json');
               try {
-                execSync('git diff --cached --quiet');
-                console.log('No changes to commit');
-                return;
-              } catch (_) {
-                // There are changes to commit
-              }
+                // Pull latest with rebase
+                execSync('git pull --rebase origin master 2>&1');
 
-              execSync(`git commit -m "Update ${process.env.ITEM_NAME} from contribution #${process.env.ISSUE_NUMBER}"`);
+                // Read current file
+                let overrides = {};
+                if (fs.existsSync(filePath)) {
+                  overrides = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+                }
 
-              try {
-                execSync('git push');
-                console.log('Pushed successfully');
+                // Merge submitted data
+                for (const [itemId, fields] of Object.entries(submitted)) {
+                  if (!overrides[itemId]) overrides[itemId] = {};
+                  Object.assign(overrides[itemId], fields);
+                }
+
+                // Write sorted
+                const sorted = Object.keys(overrides).sort().reduce((acc, key) => {
+                  acc[key] = overrides[key];
+                  return acc;
+                }, {});
+                fs.writeFileSync(filePath, JSON.stringify(sorted, null, 2) + '\n');
+
+                // Check for actual changes
+                execSync('git add price-overrides.json');
+                try {
+                  execSync('git diff --cached --quiet');
+                  console.log('No changes detected, skipping commit');
+                  return;
+                } catch (_) {
+                  // Changes exist, continue
+                }
+
+                // Commit and push
+                execSync(`git commit -m "Update ${process.env.ITEM_NAME} from contribution #${process.env.ISSUE_NUMBER}"`);
+                execSync('git push origin master');
+                console.log(`Success on attempt ${attempt}`);
                 return;
+
               } catch (e) {
-                console.log(`Push failed (attempt ${attempt}), retrying...`);
-                execSync('git reset HEAD~1');
-                execSync('git checkout -- price-overrides.json');
-                const delay = attempt * 2000 + Math.random() * 3000;
+                console.log(`Attempt ${attempt} failed: ${e.message}`);
+                if (attempt === maxAttempts) {
+                  core.setFailed(`Failed after ${maxAttempts} attempts`);
+                  return;
+                }
+                // Reset for retry
+                execSync('git reset --hard HEAD');
+                execSync('git clean -fd');
+                const delay = Math.min(attempt * 3000 + Math.random() * 5000, 30000);
                 await new Promise(r => setTimeout(r, delay));
               }
             }
 
-            core.setFailed('Failed after 20 attempts');
-
       - name: Close issue with comment
         uses: actions/github-script@v7
+        if: success()
         with:
           script: |
             const issue = context.payload.issue;
@@ -145,4 +141,3 @@ jobs:
               issue_number: issue.number,
               state: 'closed'
             });
-
