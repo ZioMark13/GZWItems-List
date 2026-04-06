@@ -52,6 +52,10 @@
   "noakon-water-1-5-l": {
     "price": 16
   },
+  "small-blood-bag": {
+    "price": 84,
+    "weight": 0.6
+  },
   "small-suture-kit": {
     "price": 81,
     "weight": 0.35
