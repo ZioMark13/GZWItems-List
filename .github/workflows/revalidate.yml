@@ -8,8 +8,9 @@ jobs:
   revalidate:
     # Only run when the exact label "deployed" is added
     if: ${{ github.event.label.name == 'deployed' }}
-
     runs-on: ubuntu-latest
+    permissions:
+      issues: write
 
     steps:
       - name: Revalidate site cache
