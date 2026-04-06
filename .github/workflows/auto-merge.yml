@@ -133,7 +133,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: issue.number,
-              body: `Merged into \`price-overrides.json\` and committed. Thanks for contributing! 🎉`
+              body: `Merged into \`price-overrides.json\` and committed. Thanks for contributing!`
             });
             await github.rest.issues.update({
               owner: context.repo.owner,
@@ -141,3 +141,36 @@ jobs:
               issue_number: issue.number,
               state: 'closed'
             });
+
+      - name: Send Discord notification
+        if: success()
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          ITEM_NAME: ${{ steps.extract.outputs.item_name }}
+          ISSUE_NUMBER: ${{ steps.extract.outputs.issue_number }}
+          REPO: ${{ github.repository }}
+        run: |
+          curl -s -X POST "$DISCORD_WEBHOOK" \
+            -H "Content-Type: application/json" \
+            -d "{
+              \"embeds\": [{
+                \"title\": \"Contribution merged\",
+                \"description\": \"**${ITEM_NAME}** has been added to \`price-overrides.json\`.\",
+                \"color\": 5763719,
+                \"fields\": [
+                  {
+                    \"name\": \"Repository\",
+                    \"value\": \"${REPO}\",
+                    \"inline\": true
+                  },
+                  {
+                    \"name\": \"Issue\",
+                    \"value\": \"#${ISSUE_NUMBER}\",
+                    \"inline\": true
+                  }
+                ],
+                \"footer\": {
+                  \"text\": \"GitHub Actions\"
+                }
+              }]
+            }"
