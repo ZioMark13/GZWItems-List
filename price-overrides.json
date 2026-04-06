@@ -21,6 +21,10 @@
   "heavenly-perfume-bottle": {
     "weight": 0.15
   },
+  "m-f-a-t-tourniquet": {
+    "price": 19,
+    "weight": 0.08
+  },
   "maknav-iced-tea": {
     "price": 11,
     "energy": "+10"
