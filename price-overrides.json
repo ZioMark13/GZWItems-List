@@ -53,6 +53,10 @@
     "price": 225,
     "weight": 1.6
   },
+  "moxifloxacin": {
+    "price": 37,
+    "weight": 0.05
+  },
   "noakon-water-1-5-l": {
     "price": 16
   },
