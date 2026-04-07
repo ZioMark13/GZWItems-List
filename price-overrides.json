@@ -80,6 +80,10 @@
     "price": 84,
     "weight": 0.6
   },
+  "small-hemostatic-syringe": {
+    "price": 39,
+    "weight": 0.06
+  },
   "small-suture-kit": {
     "price": 81,
     "weight": 0.35
