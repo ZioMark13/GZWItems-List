@@ -38,6 +38,10 @@
     "price": 10,
     "weight": 0.13
   },
+  "hdr-meal": {
+    "price": 22,
+    "hydration": "0"
+  },
   "heavenly-perfume-bottle": {
     "weight": 0.15
   },
