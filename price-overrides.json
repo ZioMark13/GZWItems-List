@@ -10,6 +10,10 @@
     "price": 1000,
     "imageUrl": ""
   },
+  "basic-surgical-suture-kit": {
+    "price": 195,
+    "weight": 0.6
+  },
   "berg-bar-cookie-chocolate": {
     "price": 22,
     "hydration": "0"
