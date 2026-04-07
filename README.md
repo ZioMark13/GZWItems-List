@@ -4,7 +4,7 @@
 
 A brief description of what this project does and who it's for
 
-Community-maintained price and image overrides for [GZW Items](https://gzwitems.vercel.app).
+Community-maintained price and image overrides for [GZW Items](https://gzwitems.com).
 
 Some items on the [official Fandom Wiki](https://gray-zone-warfare.fandom.com/wiki/Loot) are missing a sell price or image. This repo fills those gaps. Once the Wiki adds the data, our overrides are automatically ignored, so the **Wiki always takes priority**.
 
@@ -44,7 +44,7 @@ Each entry is keyed by the item's **slug** (lowercase, hyphens instead of spaces
    - Example: `AZART-P1 Radio` -> `azart-p1-radio`
    - Example: `Bottle of Water` -> `bottle-of-water`
 
-> **Tip:** On [gzwitems.vercel.app](https://gzwitems.vercel.app), items missing a price show as **$???** — those are the ones that need overrides.
+> **Tip:** On [gzwitems.com](https://gzwitems.com), items missing a price show as **$???** — those are the ones that need overrides.
 
 ### Uploading an image (optional)
 
