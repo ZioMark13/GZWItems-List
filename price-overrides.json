@@ -49,6 +49,10 @@
     "price": 11,
     "energy": "+10"
   },
+  "medium-blood-bag": {
+    "price": 225,
+    "weight": 1.6
+  },
   "noakon-water-1-5-l": {
     "price": 16
   },
