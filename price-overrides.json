@@ -93,6 +93,11 @@
   "noakon-water-1-5-l": {
     "price": 16
   },
+  "operation-data-encrypted-hard-disk": {
+    "price": 4900,
+    "imageUrl": "https://i.ibb.co/Gvrgc8Bv/Screenshot-2026-04-07-170236.png",
+    "weight": 0.18
+  },
   "small-blood-bag": {
     "price": 84,
     "weight": 0.6
