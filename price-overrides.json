@@ -74,6 +74,9 @@
     "price": 19,
     "weight": 0.08
   },
+  "m933-120mm-he-cartridge-medium-range": {
+    "weight": 13.65
+  },
   "maknav-iced-tea": {
     "price": 11,
     "energy": "+10"
