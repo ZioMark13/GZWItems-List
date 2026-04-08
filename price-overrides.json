@@ -47,6 +47,10 @@
   "energy-bar-nuts-and-fruits": {
     "hydration": "0"
   },
+  "fenethylline": {
+    "price": 29,
+    "weight": 0.15
+  },
   "flexible-splint": {
     "price": 10,
     "weight": 0.13
