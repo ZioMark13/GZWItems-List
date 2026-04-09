@@ -8,6 +8,10 @@
   "7-62x54r-lps-57-n-323s": {
     "price": 1
   },
+  "acetylene-cylinder": {
+    "price": 56,
+    "weight": 11.5
+  },
   "aques-water-1-5-l": {
     "price": 16
   },
