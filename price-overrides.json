@@ -12,6 +12,10 @@
     "price": 56,
     "weight": 11.5
   },
+  "activated-charcoal": {
+    "price": 5,
+    "weight": 0.15
+  },
   "aques-water-1-5-l": {
     "price": 16
   },
