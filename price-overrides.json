@@ -112,6 +112,10 @@
   "pro-multitool": {
     "price": 50
   },
+  "retractable-tourniquet": {
+    "price": 7,
+    "weight": 0.08
+  },
   "small-blood-bag": {
     "price": 84,
     "weight": 0.6
