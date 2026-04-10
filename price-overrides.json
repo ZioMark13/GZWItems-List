@@ -34,6 +34,10 @@
   "biometric-access-card": {
     "price": 2000
   },
+  "civilian-gauze": {
+    "price": 2,
+    "weight": 0.03
+  },
   "coco-jumbo-coconut-juice-drink": {
     "price": 2
   },
