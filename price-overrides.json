@@ -82,6 +82,10 @@
     "price": 285,
     "weight": 0.1
   },
+  "ibalin": {
+    "price": 2,
+    "weight": 0.05
+  },
   "large-blood-bag": {
     "price": 294,
     "weight": 2.1
