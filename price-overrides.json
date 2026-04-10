@@ -82,6 +82,10 @@
     "price": 19,
     "weight": 0.08
   },
+  "m933-120mm-he-cartridge-low-range": {
+    "price": 500,
+    "weight": 13
+  },
   "m933-120mm-he-cartridge-medium-range": {
     "weight": 13.65
   },
