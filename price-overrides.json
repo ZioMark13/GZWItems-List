@@ -34,6 +34,10 @@
   "biometric-access-card": {
     "price": 2000
   },
+  "civilian-flexible-splint": {
+    "price": 4,
+    "weight": 0.15
+  },
   "civilian-gauze": {
     "price": 2,
     "weight": 0.03
