@@ -210,5 +210,8 @@
   "villa-vongphet-room-key": {
     "price": 59,
     "weight": 0.01
+  },
+  "windmill-almond-chocolate-bar": {
+    "price": 11
   }
 }
