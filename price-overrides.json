@@ -142,6 +142,10 @@
     "price": 1,
     "weight": 0.05
   },
+  "pha-lang-restaurant-storage-key": {
+    "price": 29,
+    "weight": 0.01
+  },
   "potassium-iodide": {
     "price": 36,
     "weight": 0.05
