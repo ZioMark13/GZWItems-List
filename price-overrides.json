@@ -201,5 +201,9 @@
   },
   "touchdown-lemon-soda": {
     "price": 3
+  },
+  "villa-vongphet-room-key": {
+    "price": 59,
+    "weight": 0.01
   }
 }
