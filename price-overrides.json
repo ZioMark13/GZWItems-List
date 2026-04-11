@@ -64,7 +64,8 @@
     "weight": 0.2
   },
   "energy-bar-nuts-and-fruits": {
-    "hydration": "0"
+    "hydration": "0",
+    "price": 6
   },
   "fenethylline": {
     "price": 29,
