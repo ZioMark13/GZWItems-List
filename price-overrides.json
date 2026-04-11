@@ -56,6 +56,9 @@
   "coco-jumbo-coconut-juice-drink": {
     "price": 2
   },
+  "combat-ration-pack": {
+    "price": 21
+  },
   "combat-tourniquet": {
     "price": 24,
     "weight": 0.09
