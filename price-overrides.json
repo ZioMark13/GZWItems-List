@@ -38,6 +38,9 @@
   "biometric-access-card": {
     "price": 2000
   },
+  "canned-tuna-chunks": {
+    "price": 7
+  },
   "civilian-flexible-splint": {
     "price": 4,
     "weight": 0.15
