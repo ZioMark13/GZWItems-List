@@ -172,6 +172,10 @@
     "price": 7,
     "weight": 0.08
   },
+  "sawmill-office-key": {
+    "price": 59,
+    "weight": 0.01
+  },
   "small-blood-bag": {
     "price": 84,
     "weight": 0.6
