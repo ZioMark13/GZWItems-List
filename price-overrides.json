@@ -1,6 +1,7 @@
 {
   "300-aac-blackout-ap": {
-    "price": 2
+    "price": 2,
+    "weight": 0.9
   },
   "5-45x39mm-bp-7n22": {
     "price": 2
