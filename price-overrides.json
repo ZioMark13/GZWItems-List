@@ -124,7 +124,8 @@
     "weight": 13
   },
   "m933-120mm-he-cartridge-medium-range": {
-    "weight": 13.65
+    "weight": 13.65,
+    "price": 1000
   },
   "mackerel-in-teriyaki-sauce": {
     "price": 14
