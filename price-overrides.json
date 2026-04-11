@@ -75,6 +75,10 @@
     "price": 10,
     "weight": 0.13
   },
+  "hangar-03-key": {
+    "price": 59,
+    "weight": 0.01
+  },
   "hdr-meal": {
     "price": 22,
     "hydration": "0"
