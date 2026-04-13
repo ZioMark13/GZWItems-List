@@ -237,6 +237,10 @@
   "touchdown-lemon-soda": {
     "price": 3
   },
+  "unlra-quarantine-key": {
+    "price": 90,
+    "weight": 0.01
+  },
   "villa-vongphet-room-key": {
     "price": 59,
     "weight": 0.01
