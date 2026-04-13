@@ -171,6 +171,11 @@
     "price": 4,
     "weight": 0.05
   },
+  "motorcyle-battery": {
+    "price": 36,
+    "imageUrl": "https://i.ibb.co/dwYBtpX4/22676-c27i-GZW-13-04-2026.png",
+    "weight": 2
+  },
   "moxifloxacin": {
     "price": 37,
     "weight": 0.05
