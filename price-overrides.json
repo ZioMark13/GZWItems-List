@@ -123,6 +123,9 @@
     "price": 2,
     "weight": 0.05
   },
+  "infinity-isotonic-drink": {
+    "price": 4
+  },
   "inthavong-farm-shed-key": {
     "price": 59,
     "weight": 0.01
