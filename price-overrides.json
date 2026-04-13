@@ -34,6 +34,10 @@
     "price": 1000,
     "imageUrl": ""
   },
+  "ban-pa-elder-s-house-key": {
+    "price": 59,
+    "weight": 0.01
+  },
   "ban-pa-elder-s-room-key": {
     "price": 59,
     "weight": 0.01
