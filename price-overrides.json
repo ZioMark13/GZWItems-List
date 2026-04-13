@@ -208,6 +208,10 @@
     "price": 1,
     "weight": 0.05
   },
+  "pha-lang-airfield-meeting-room-key": {
+    "price": 59,
+    "weight": 0.01
+  },
   "pha-lang-marketplace-office-key": {
     "price": 29,
     "weight": 0.01
