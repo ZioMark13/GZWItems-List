@@ -34,6 +34,11 @@
     "price": 1000,
     "imageUrl": ""
   },
+  "bamboo-shoots": {
+    "price": 3,
+    "imageUrl": "https://i.ibb.co/C5yXQBvf/Bamboo-Shoots.png",
+    "weight": 0.6
+  },
   "ban-pa-elder-s-house-key": {
     "price": 59,
     "weight": 0.01
