@@ -34,6 +34,10 @@
     "price": 1000,
     "imageUrl": ""
   },
+  "ban-pa-fishing-hut-key": {
+    "price": 59,
+    "weight": 0.01
+  },
   "basic-surgical-suture-kit": {
     "price": 195,
     "weight": 0.6
