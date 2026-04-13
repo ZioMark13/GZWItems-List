@@ -38,6 +38,10 @@
     "price": 59,
     "weight": 0.01
   },
+  "ban-pa-warehouse-key": {
+    "price": 59,
+    "weight": 0.01
+  },
   "basic-surgical-suture-kit": {
     "price": 195,
     "weight": 0.6
