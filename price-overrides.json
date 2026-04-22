@@ -274,6 +274,9 @@
   "spicy-thai-combat-meal": {
     "price": 17
   },
+  "strelets-m-tablet": {
+    "weight": 1.4
+  },
   "strychnine": {
     "price": 180,
     "weight": 0.1
