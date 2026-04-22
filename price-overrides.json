@@ -116,6 +116,9 @@
     "price": 10,
     "weight": 0.13
   },
+  "gray-focused-energy": {
+    "price": 21
+  },
   "hangar-03-key": {
     "price": 59,
     "weight": 0.01
