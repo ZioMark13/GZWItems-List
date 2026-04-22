@@ -232,6 +232,9 @@
     "price": 36,
     "weight": 0.05
   },
+  "power-energy-fuel": {
+    "price": 13
+  },
   "premium-pork-luncheon-meat": {
     "price": 19
   },
