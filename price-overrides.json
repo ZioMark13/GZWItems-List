@@ -130,6 +130,10 @@
   "heavenly-perfume-bottle": {
     "weight": 0.15
   },
+  "hotel-supply-closet-key-card": {
+    "price": 90,
+    "weight": 0.01
+  },
   "hpr-3-s": {
     "price": 285,
     "weight": 0.1
