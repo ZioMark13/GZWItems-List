@@ -12,6 +12,10 @@
   "7-62x54r-lps-57-n-323s": {
     "price": 1
   },
+  "9x19mm-libra-snail": {
+    "price": 1,
+    "weight": 0.007
+  },
   "acetylene-cylinder": {
     "price": 56,
     "weight": 11.5
