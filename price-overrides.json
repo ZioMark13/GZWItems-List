@@ -234,6 +234,10 @@
   "organic-tofu": {
     "price": 5
   },
+  "ori-12": {
+    "price": "$255",
+    "weight": 0.1
+  },
   "paracetamol": {
     "price": 1,
     "weight": 0.05
