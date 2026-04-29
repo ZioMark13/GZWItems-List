@@ -115,6 +115,10 @@
     "hydration": "0",
     "price": 6
   },
+  "epo": {
+    "price": "$219",
+    "weight": 0.1
+  },
   "fenethylline": {
     "price": 29,
     "weight": 0.15
