@@ -157,6 +157,9 @@
     "price": 2,
     "weight": 0.05
   },
+  "industrial-solvent": {
+    "imageUrl": "https://i.ibb.co/GDQSrrx/image.png"
+  },
   "infinity-isotonic-drink": {
     "price": 4
   },
