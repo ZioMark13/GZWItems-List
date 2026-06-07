@@ -294,6 +294,10 @@
     "price": 90,
     "weight": 0.01
   },
+  "seal-modular-bandage": {
+    "price": 16,
+    "weight": 0.09
+  },
   "sinngua-lunch-meat": {
     "price": 15
   },
