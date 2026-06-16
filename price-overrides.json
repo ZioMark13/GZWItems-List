@@ -88,6 +88,10 @@
   "biometric-access-card": {
     "price": 2000
   },
+  "c101-key": {
+    "price": 90,
+    "weight": 0
+  },
   "canned-tuna-chunks": {
     "price": 7
   },
