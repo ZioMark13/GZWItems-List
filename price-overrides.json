@@ -131,6 +131,10 @@
     "price": 10,
     "weight": 0.13
   },
+  "fort-narith-infirmary-icu-key": {
+    "price": 90,
+    "weight": 0
+  },
   "gray-focused-energy": {
     "price": 21
   },
