@@ -109,6 +109,16 @@
     "addedAt": "2026-10-26T17:12:02.310Z"
   },
   {
+    "id": "signal-generator",
+    "name": "Signal Generator",
+    "type": "materials",
+    "category": "Building Material",
+    "weight": 1.2,
+    "imageUrl": "https://i.ibb.co/hJpXfkcF/image.png",
+    "description": "A device capable of accurately generating a wide range of electrical signal waveforms. Useful for building and upgrading Hideout stations.",
+    "addedAt": "2026-10-26T21:42:48.820Z"
+  },
+  {
     "id": "silicone-sealant",
     "name": "Silicone Sealant",
     "type": "materials",
