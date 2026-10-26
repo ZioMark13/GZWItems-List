@@ -17,5 +17,14 @@
     "imageUrl": "https://i.ibb.co/6cSxdYXq/image.png",
     "description": "An engineered glass electrode designed to measure ionic activity in liquids. Useful for building and upgrading Hideout stations.",
     "addedAt": "2026-10-26T17:14:45.570Z"
+  },
+  {
+    "id": "refrigerant",
+    "name": "Refrigerant",
+    "type": "materials",
+    "category": "Building Materials",
+    "weight": 3,
+    "imageUrl": "https://i.ibb.co/JR8C58F9/image.png",
+    "addedAt": "2026-10-26T17:12:02.310Z"
   }
 ]
