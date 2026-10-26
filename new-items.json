@@ -1,5 +1,17 @@
 [
   {
+    "id": "analog-indicator",
+    "name": "Analog Indicator",
+    "type": "materials",
+    "category": "Building Material",
+    "price": 15,
+    "gridSize": "1x1",
+    "weight": 0.25,
+    "imageUrl": "https://i.ibb.co/9HrMZwx9/image.png",
+    "description": "An analog gauge used to display measured values. Currently, it sits at zero. Useful for building and upgrading Hideout stations.",
+    "addedAt": "2026-10-26T21:38:21.843Z"
+  },
+  {
     "id": "circuit-board",
     "name": "Circuit Board",
     "type": "materials",
