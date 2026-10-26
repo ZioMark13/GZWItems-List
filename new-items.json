@@ -9,6 +9,18 @@
     "addedAt": "2026-10-26T17:13:35.874Z"
   },
   {
+    "id": "citric-acid",
+    "name": "Citric Acid",
+    "type": "materials",
+    "category": "Production Material",
+    "price": 15,
+    "gridSize": "1x2",
+    "weight": 1,
+    "imageUrl": "https://i.ibb.co/4CkWy32/image.png",
+    "description": "An eco-friendly alternative to harsher cleaning chemicals, citric acid is effective at removing mineral buildup, grease, and everyday grime. Its acidic properties also make it useful in the production of morphine solution.",
+    "addedAt": "2026-10-26T21:36:01.586Z"
+  },
+  {
     "id": "complex-glass-electrode",
     "name": "Complex Glass Electrode",
     "type": "materials",
