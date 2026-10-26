@@ -67,6 +67,18 @@
     "addedAt": "2026-10-26T21:29:48.633Z"
   },
   {
+    "id": "garden-lime",
+    "name": "Garden Lime",
+    "type": "materials",
+    "category": "Production Material",
+    "price": 15,
+    "gridSize": "2x2",
+    "weight": 3,
+    "imageUrl": "https://i.ibb.co/m5GG4Qz3/image.png",
+    "description": "A granular soil conditioner. Its acid-neutralizing properties allow beneficial bacteria to flourish, improving the growth and resilience of crops. It can also be used in the morphine extraction process. Keep out of reach of children.",
+    "addedAt": "2026-10-26T21:34:59.928Z"
+  },
+  {
     "id": "mechanical-pipette",
     "name": "Mechanical Pipette",
     "type": "materials",
