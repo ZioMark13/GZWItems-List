@@ -19,6 +19,18 @@
     "addedAt": "2026-10-26T17:14:45.570Z"
   },
   {
+    "id": "empty-autoinjector",
+    "name": "Empty Autoinjector",
+    "type": "materials",
+    "category": "Crafting Material",
+    "price": 15,
+    "gridSize": "1x1",
+    "weight": 0.09,
+    "imageUrl": "https://i.ibb.co/ksq9xwvr/image.png",
+    "description": "An empty autoinjector that can be filled with a variety of medical substances for quick and simple administration. Required for crafting most stimulants",
+    "addedAt": "2026-10-26T21:33:30.214Z"
+  },
+  {
     "id": "fabrics",
     "name": "Fabrics",
     "type": "materials",
