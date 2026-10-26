@@ -95,5 +95,17 @@
     "weight": 3,
     "imageUrl": "https://i.ibb.co/JR8C58F9/image.png",
     "addedAt": "2026-10-26T17:12:02.310Z"
+  },
+  {
+    "id": "silicone-sealant",
+    "name": "Silicone Sealant",
+    "type": "materials",
+    "category": "Building Material",
+    "price": 15,
+    "gridSize": "1x3",
+    "weight": 1,
+    "imageUrl": "https://i.ibb.co/rRYTYcrb/image.png",
+    "description": "An aquarium-grade silicone sealant resistant to water and a wide range of chemicals. Useful for building and upgrading Hideout stations.",
+    "addedAt": "2026-10-26T21:39:28.955Z"
   }
 ]
