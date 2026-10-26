@@ -1,5 +1,14 @@
 [
   {
+    "id": "circuit-board",
+    "name": "Circuit Board",
+    "type": "materials",
+    "category": "Electronics",
+    "imageUrl": "https://i.ibb.co/Vp5KH1W1/image.png",
+    "description": "A versatile circuit board with multiple inputs and outputs, as well as microprocessor for basic programming. Useful for building and upgrading Hideout stations.",
+    "addedAt": "2026-10-26T17:13:35.874Z"
+  },
+  {
     "id": "complex-glass-electrode",
     "name": "Complex Glass Electrode",
     "type": "materials",
