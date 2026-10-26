@@ -19,6 +19,17 @@
     "addedAt": "2026-10-26T17:14:45.570Z"
   },
   {
+    "id": "multimeter",
+    "name": "Multimeter",
+    "type": "materials",
+    "category": "Building Material",
+    "gridSize": "1x2",
+    "weight": 1.5,
+    "imageUrl": "https://i.ibb.co/kgXSn2pV/image.png",
+    "description": "A versatile diagnostic tool used to measure voltage, current, and resistance when testing and troubleshooting electrical circuits. Useful for building and upgrading Hideout stations.",
+    "addedAt": "2026-10-26T21:28:08.821Z"
+  },
+  {
     "id": "refrigerant",
     "name": "Refrigerant",
     "type": "materials",
