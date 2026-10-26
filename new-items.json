@@ -119,5 +119,17 @@
     "imageUrl": "https://i.ibb.co/rRYTYcrb/image.png",
     "description": "An aquarium-grade silicone sealant resistant to water and a wide range of chemicals. Useful for building and upgrading Hideout stations.",
     "addedAt": "2026-10-26T21:39:28.955Z"
+  },
+  {
+    "id": "water-pump",
+    "name": "Water Pump",
+    "type": "materials",
+    "category": "Building Material",
+    "price": 450,
+    "gridSize": "4x3",
+    "weight": 15,
+    "imageUrl": "https://i.ibb.co/CKKSjvrV/image.png",
+    "description": "A small powered device designed to move liquids from one place to another. Useful for building and upgrading Hideout stations.",
+    "addedAt": "2026-10-26T21:26:38.392Z"
   }
 ]
