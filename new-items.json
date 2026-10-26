@@ -43,6 +43,16 @@
     "addedAt": "2026-10-26T21:29:48.633Z"
   },
   {
+    "id": "mechanical-pipette",
+    "name": "Mechanical Pipette",
+    "type": "materials",
+    "category": "Building Material",
+    "weight": 0.13,
+    "imageUrl": "https://i.ibb.co/pjnZfL3m/image.png",
+    "description": "A mechanical pipette that makes laboratory work faster, safer, and more precise. No more sucking chemicals into a glass pipette by mouth. Useful for building and upgrading Hideout stations.",
+    "addedAt": "2026-10-26T21:41:03.029Z"
+  },
+  {
     "id": "multimeter",
     "name": "Multimeter",
     "type": "materials",
