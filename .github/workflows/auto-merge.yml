@@ -19,9 +19,6 @@ jobs:
   merge-contribution:
     if: github.event.label.name == 'approved'
     runs-on: ubuntu-latest
-    concurrency:
-      group: auto-merge-contribution
-      cancel-in-progress: false
     permissions:
       contents: write
       issues: write
@@ -122,13 +119,18 @@ jobs:
           git diff --cached --quiet && echo "No changes to commit" && exit 0
           git commit -m "Update $ITEM_NAME from contribution #$ISSUE_NUMBER"
 
-          for i in 1 2 3 4 5; do
+          for i in 1 2 3 4 5 6 7 8; do
             if git push; then
               exit 0
             fi
             echo "Push rejected, rebasing onto latest remote and retrying ($i)..."
+            sleep $(( RANDOM % 5 + 1 ))
             git fetch origin "$GITHUB_REF_NAME"
-            git rebase "origin/$GITHUB_REF_NAME"
+            if ! git rebase "origin/$GITHUB_REF_NAME"; then
+              echo "Rebase conflict, aborting. Someone else's change touched the same lines."
+              git rebase --abort
+              exit 1
+            fi
           done
           echo "Push failed after retries."
           exit 1
