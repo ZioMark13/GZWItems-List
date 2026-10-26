@@ -42,6 +42,18 @@
     "addedAt": "2026-10-26T21:28:08.821Z"
   },
   {
+    "id": "opium-gum",
+    "name": "Opium Gum",
+    "type": "materials",
+    "category": "Production Material",
+    "price": 150,
+    "gridSize": "2x2",
+    "weight": 2,
+    "imageUrl": "https://i.ibb.co/6R2CyRPY/image.png",
+    "description": "A sticky, gum-like substance collected by scoring poppy seedpods. An essential raw material for opiate production.",
+    "addedAt": "2026-10-26T21:31:49.884Z"
+  },
+  {
     "id": "refrigerant",
     "name": "Refrigerant",
     "type": "materials",
