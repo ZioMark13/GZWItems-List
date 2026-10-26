@@ -66,6 +66,18 @@
     "addedAt": "2026-10-26T21:31:49.884Z"
   },
   {
+    "id": "purified-water",
+    "name": "Purified Water",
+    "type": "materials",
+    "category": "Production Material",
+    "price": 30,
+    "gridSize": "2x2",
+    "weight": 5,
+    "imageUrl": "https://i.ibb.co/Sw9pDtfb/image.png",
+    "description": "Water purified through boiling and condensation to remove impurities. Not intended for consumption, but ideal for use in opiate production.",
+    "addedAt": "2026-10-26T21:37:14.445Z"
+  },
+  {
     "id": "refrigerant",
     "name": "Refrigerant",
     "type": "materials",
