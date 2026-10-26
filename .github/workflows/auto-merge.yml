@@ -27,15 +27,22 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Extract and merge JSON
+      - name: Merge and push (with retry + duplicate detection)
         uses: actions/github-script@v7
         with:
           script: |
             const fs = require('fs');
+            const { execSync } = require('child_process');
+
+            const sh = (cmd) => execSync(cmd, { stdio: 'pipe' }).toString();
+
+            sh('git config user.name "github-actions[bot]"');
+            sh('git config user.email "github-actions[bot]@users.noreply.github.com"');
+
             const issue = context.payload.issue;
             const body = issue.body || '';
+            const ref = process.env.GITHUB_REF_NAME;
 
-            // Extract JSON from the code block
             const match = body.match(/```json\n([\s\S]*?)\n```/);
             if (!match) {
               core.setFailed('No JSON code block found in issue body.');
@@ -51,89 +58,110 @@ jobs:
             }
 
             const isNewItem = (issue.labels || []).some((l) => l.name === 'new-item');
+            const filePath = isNewItem ? 'new-items.json' : 'price-overrides.json';
+            const itemName = isNewItem
+              ? issue.title.replace(/^\[New item\]\s*/, '').trim()
+              : issue.title.replace(/^\[Contribution\]\s*/, '').split('—')[0].trim();
 
-            if (isNewItem) {
-              // ── New item: append to new-items.json ──
-              const filePath = 'new-items.json';
-              let items = [];
-              if (fs.existsSync(filePath)) {
-                items = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-                if (!Array.isArray(items)) {
-                  core.setFailed('new-items.json must contain a JSON array.');
-                  return;
+            // Re-applies the contribution against whatever is currently on disk.
+            // Returns false (no-op) if the contribution is already fully present —
+            // this is what lets a re-run/duplicate label skip cleanly instead of failing.
+            function applyMerge() {
+              if (isNewItem) {
+                let items = [];
+                if (fs.existsSync(filePath)) {
+                  items = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+                  if (!Array.isArray(items)) {
+                    core.setFailed('new-items.json must contain a JSON array.');
+                    return null;
+                  }
                 }
-              }
-
-              const incoming = Array.isArray(submitted) ? submitted : [submitted];
-              for (const entry of incoming) {
-                if (!entry.name || !entry.type) {
-                  core.setFailed('Each new item needs at least "name" and "type".');
-                  return;
+                const incoming = Array.isArray(submitted) ? submitted : [submitted];
+                let changed = false;
+                for (const entry of incoming) {
+                  if (!entry.name || !entry.type) {
+                    core.setFailed('Each new item needs at least "name" and "type".');
+                    return null;
+                  }
+                  const index = items.findIndex((i) => i.id === entry.id);
+                  if (index >= 0) {
+                    const merged = { ...items[index], ...entry };
+                    if (JSON.stringify(merged) !== JSON.stringify(items[index])) {
+                      items[index] = merged;
+                      changed = true;
+                    }
+                  } else {
+                    items.push(entry);
+                    changed = true;
+                  }
                 }
-                const index = items.findIndex((i) => i.id === entry.id);
-                // Re-submitting the same id updates it instead of duplicating.
-                if (index >= 0) {
-                  items[index] = { ...items[index], ...entry };
-                } else {
-                  items.push(entry);
+                if (changed) {
+                  items.sort((a, b) => String(a.id).localeCompare(String(b.id)));
+                  fs.writeFileSync(filePath, JSON.stringify(items, null, 2) + '\n');
                 }
-              }
-
-              items.sort((a, b) => String(a.id).localeCompare(String(b.id)));
-              fs.writeFileSync(filePath, JSON.stringify(items, null, 2) + '\n');
-              core.exportVariable('TARGET_FILE', filePath);
-              core.exportVariable('ITEM_NAME', issue.title.replace(/^\[New item\]\s*/, '').trim());
-            } else {
-              // ── Correction: merge fields into price-overrides.json ──
-              const filePath = 'price-overrides.json';
-              let overrides = {};
-              if (fs.existsSync(filePath)) {
-                overrides = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-              }
-
-              for (const [itemId, fields] of Object.entries(submitted)) {
-                if (!overrides[itemId]) {
-                  overrides[itemId] = {};
+                return changed;
+              } else {
+                let overrides = {};
+                if (fs.existsSync(filePath)) {
+                  overrides = JSON.parse(fs.readFileSync(filePath, 'utf8'));
                 }
-                Object.assign(overrides[itemId], fields);
+                let changed = false;
+                for (const [itemId, fields] of Object.entries(submitted)) {
+                  if (!overrides[itemId]) overrides[itemId] = {};
+                  for (const [k, v] of Object.entries(fields)) {
+                    if (overrides[itemId][k] !== v) {
+                      overrides[itemId][k] = v;
+                      changed = true;
+                    }
+                  }
+                }
+                if (changed) {
+                  const sorted = Object.keys(overrides).sort().reduce((acc, key) => {
+                    acc[key] = overrides[key];
+                    return acc;
+                  }, {});
+                  fs.writeFileSync(filePath, JSON.stringify(sorted, null, 2) + '\n');
+                }
+                return changed;
               }
-
-              // Write back sorted by key
-              const sorted = Object.keys(overrides).sort().reduce((acc, key) => {
-                acc[key] = overrides[key];
-                return acc;
-              }, {});
-
-              fs.writeFileSync(filePath, JSON.stringify(sorted, null, 2) + '\n');
-              core.exportVariable('TARGET_FILE', filePath);
-              core.exportVariable('ITEM_NAME', issue.title.replace(/^\[Contribution\]\s*/, '').split('—')[0].trim());
             }
 
-            core.exportVariable('ISSUE_NUMBER', issue.number);
+            let pushed = false;
+            let skipped = false;
 
-      - name: Commit and push
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add "$TARGET_FILE"
-          git diff --cached --quiet && echo "No changes to commit" && exit 0
-          git commit -m "Update $ITEM_NAME from contribution #$ISSUE_NUMBER"
+            for (let attempt = 1; attempt <= 8; attempt++) {
+              sh(`git fetch origin ${ref}`);
+              sh(`git reset --hard origin/${ref}`);
 
-          for i in 1 2 3 4 5 6 7 8; do
-            if git push; then
-              exit 0
-            fi
-            echo "Push rejected, rebasing onto latest remote and retrying ($i)..."
-            sleep $(( RANDOM % 5 + 1 ))
-            git fetch origin "$GITHUB_REF_NAME"
-            if ! git rebase "origin/$GITHUB_REF_NAME"; then
-              echo "Rebase conflict, aborting. Someone else's change touched the same lines."
-              git rebase --abort
-              exit 1
-            fi
-          done
-          echo "Push failed after retries."
-          exit 1
+              const changed = applyMerge();
+              if (changed === null) return; // setFailed already called
+              if (!changed) {
+                core.info('Contribution already reflected in the file — skipping, nothing to push.');
+                skipped = true;
+                break;
+              }
+
+              sh(`git add ${filePath}`);
+              sh(`git commit -m "Update ${itemName} from contribution #${issue.number}"`);
+
+              try {
+                sh('git push origin HEAD:' + ref);
+                pushed = true;
+                break;
+              } catch (e) {
+                core.info(`Push rejected on attempt ${attempt}, re-fetching and retrying...`);
+              }
+            }
+
+            if (!pushed && !skipped) {
+              core.setFailed('Failed to push after retries.');
+              return;
+            }
+
+            core.exportVariable('TARGET_FILE', filePath);
+            core.exportVariable('ITEM_NAME', itemName);
+            core.exportVariable('ISSUE_NUMBER', String(issue.number));
+            core.exportVariable('WAS_SKIPPED', skipped ? 'true' : 'false');
 
       - name: Close issue with comment
         uses: actions/github-script@v7
@@ -141,11 +169,15 @@ jobs:
           script: |
             const issue = context.payload.issue;
             const file = process.env.TARGET_FILE || 'price-overrides.json';
+            const wasSkipped = process.env.WAS_SKIPPED === 'true';
+            const body = wasSkipped
+              ? `This contribution is already reflected in \`${file}\` — nothing new to merge. Closing.`
+              : `Merged into \`${file}\` and committed. Thanks for contributing! 🎉`;
             await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: issue.number,
-              body: `Merged into \`${file}\` and committed. Thanks for contributing! 🎉`
+              body
             });
             await github.rest.issues.update({
               owner: context.repo.owner,
