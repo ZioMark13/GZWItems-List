@@ -19,6 +19,18 @@
     "addedAt": "2026-10-26T17:14:45.570Z"
   },
   {
+    "id": "fabrics",
+    "name": "Fabrics",
+    "type": "materials",
+    "category": "Building Material",
+    "price": 15,
+    "gridSize": "1x4",
+    "weight": 2,
+    "imageUrl": "https://i.ibb.co/1JtfQ2yB/image.png",
+    "description": "A roll of durable cloth fabric suitable for insulation, filtration, padding and other practical uses. Useful for building and upgrading Hideout stations.",
+    "addedAt": "2026-10-26T21:29:48.633Z"
+  },
+  {
     "id": "multimeter",
     "name": "Multimeter",
     "type": "materials",
