@@ -180,7 +180,8 @@
     "hydration": "0"
   },
   "heavenly-perfume-bottle": {
-    "weight": 0.15
+    "weight": 0.15,
+    "gridSize": "1x1"
   },
   "hotel-supply-closet-key-card": {
     "price": 90,
