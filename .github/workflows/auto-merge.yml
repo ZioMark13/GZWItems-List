@@ -1,12 +1,19 @@
+# Copy this file to your GZWItems-List repo at:
+# .github/workflows/auto-merge.yml
+#
+# When you add the "approved" label to an issue, this action:
+# 1. Extracts the JSON code block from the issue body
+# 2. Merges it into the right file:
+#      - issues labelled "new-item"  -> new-items.json      (append a record)
+#      - everything else             -> price-overrides.json (merge fields)
+# 3. Commits and pushes the change
+# 4. Closes the issue with a comment
+
 name: Auto-merge approved contributions
 
 on:
   issues:
     types: [labeled]
-
-concurrency:
-  group: merge-contribution-${{ github.event.issue.number }}
-  cancel-in-progress: false
 
 jobs:
   merge-contribution:
@@ -17,17 +24,14 @@ jobs:
       issues: write
 
     steps:
-      - name: Random delay to stagger parallel runs
-        run: sleep $((RANDOM % 60))
-
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Extract JSON from issue
-        id: extract
+      - name: Extract and merge JSON
         uses: actions/github-script@v7
         with:
           script: |
+            const fs = require('fs');
             const issue = context.payload.issue;
             const body = issue.body || '';
 
@@ -38,102 +42,95 @@ jobs:
               return;
             }
 
-            // Validate JSON
+            let submitted;
             try {
-              JSON.parse(match[1]);
+              submitted = JSON.parse(match[1]);
             } catch (e) {
               core.setFailed(`Invalid JSON in issue: ${e.message}`);
               return;
             }
 
-            core.setOutput('json', match[1]);
+            const isNewItem = (issue.labels || []).some((l) => l.name === 'new-item');
 
-            const itemName = issue.title.replace(/\^\[Contribution\]\s*/, '').split('—')[0].trim();
-            core.setOutput('item_name', itemName);
-            core.setOutput('issue_number', issue.number);
-
-      - name: Merge, commit and push
-        uses: actions/github-script@v7
-        env:
-          SUBMITTED_JSON: ${{ steps.extract.outputs.json }}
-          ITEM_NAME: ${{ steps.extract.outputs.item_name }}
-          ISSUE_NUMBER: ${{ steps.extract.outputs.issue_number }}
-        with:
-          script: |
-            const { execSync } = require('child_process');
-            const fs = require('fs');
-            const submitted = JSON.parse(process.env.SUBMITTED_JSON);
-            const filePath = 'price-overrides.json';
-            const maxAttempts = 25;
-
-            execSync('git config user.name "github-actions[bot]"');
-            execSync('git config user.email "github-actions[bot]@users.noreply.github.com"');
-
-            for (let attempt = 1; attempt <= maxAttempts; attempt++) {
-              try {
-                // Pull latest with rebase
-                execSync('git pull --rebase origin master 2>&1');
-
-                // Read current file
-                let overrides = {};
-                if (fs.existsSync(filePath)) {
-                  overrides = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-                }
-
-                // Merge submitted data
-                for (const [itemId, fields] of Object.entries(submitted)) {
-                  if (!overrides[itemId]) overrides[itemId] = {};
-                  Object.assign(overrides[itemId], fields);
-                }
-
-                // Write sorted
-                const sorted = Object.keys(overrides).sort().reduce((acc, key) => {
-                  acc[key] = overrides[key];
-                  return acc;
-                }, {});
-                fs.writeFileSync(filePath, JSON.stringify(sorted, null, 2) + '\n');
-
-                // Check for actual changes
-                execSync('git add price-overrides.json');
-                try {
-                  execSync('git diff --cached --quiet');
-                  console.log('No changes detected, skipping commit');
-                  return;
-                } catch (_) {
-                  // Changes exist, continue
-                }
-
-                // Commit and push
-                execSync(`git commit -m "Update ${process.env.ITEM_NAME} from contribution #${process.env.ISSUE_NUMBER}"`);
-                execSync('git push origin master');
-                console.log(`Success on attempt ${attempt}`);
-                return;
-
-              } catch (e) {
-                console.log(`Attempt ${attempt} failed: ${e.message}`);
-                if (attempt === maxAttempts) {
-                  core.setFailed(`Failed after ${maxAttempts} attempts`);
+            if (isNewItem) {
+              // ── New item: append to new-items.json ──
+              const filePath = 'new-items.json';
+              let items = [];
+              if (fs.existsSync(filePath)) {
+                items = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+                if (!Array.isArray(items)) {
+                  core.setFailed('new-items.json must contain a JSON array.');
                   return;
                 }
-                // Reset for retry
-                execSync('git reset --hard HEAD');
-                execSync('git clean -fd');
-                const delay = Math.min(attempt * 3000 + Math.random() * 5000, 30000);
-                await new Promise(r => setTimeout(r, delay));
               }
+
+              const incoming = Array.isArray(submitted) ? submitted : [submitted];
+              for (const entry of incoming) {
+                if (!entry.name || !entry.type) {
+                  core.setFailed('Each new item needs at least "name" and "type".');
+                  return;
+                }
+                const index = items.findIndex((i) => i.id === entry.id);
+                // Re-submitting the same id updates it instead of duplicating.
+                if (index >= 0) {
+                  items[index] = { ...items[index], ...entry };
+                } else {
+                  items.push(entry);
+                }
+              }
+
+              items.sort((a, b) => String(a.id).localeCompare(String(b.id)));
+              fs.writeFileSync(filePath, JSON.stringify(items, null, 2) + '\n');
+              core.exportVariable('TARGET_FILE', filePath);
+              core.exportVariable('ITEM_NAME', issue.title.replace(/^\[New item\]\s*/, '').trim());
+            } else {
+              // ── Correction: merge fields into price-overrides.json ──
+              const filePath = 'price-overrides.json';
+              let overrides = {};
+              if (fs.existsSync(filePath)) {
+                overrides = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+              }
+
+              for (const [itemId, fields] of Object.entries(submitted)) {
+                if (!overrides[itemId]) {
+                  overrides[itemId] = {};
+                }
+                Object.assign(overrides[itemId], fields);
+              }
+
+              // Write back sorted by key
+              const sorted = Object.keys(overrides).sort().reduce((acc, key) => {
+                acc[key] = overrides[key];
+                return acc;
+              }, {});
+
+              fs.writeFileSync(filePath, JSON.stringify(sorted, null, 2) + '\n');
+              core.exportVariable('TARGET_FILE', filePath);
+              core.exportVariable('ITEM_NAME', issue.title.replace(/^\[Contribution\]\s*/, '').split('—')[0].trim());
             }
+
+            core.exportVariable('ISSUE_NUMBER', issue.number);
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add "$TARGET_FILE"
+          git diff --cached --quiet && echo "No changes to commit" && exit 0
+          git commit -m "Update $ITEM_NAME from contribution #$ISSUE_NUMBER"
+          git push
 
       - name: Close issue with comment
         uses: actions/github-script@v7
-        if: success()
         with:
           script: |
             const issue = context.payload.issue;
+            const file = process.env.TARGET_FILE || 'price-overrides.json';
             await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: issue.number,
-              body: `Merged into \`price-overrides.json\` and committed. Thanks for contributing!`
+              body: `Merged into \`${file}\` and committed. Thanks for contributing! 🎉`
             });
             await github.rest.issues.update({
               owner: context.repo.owner,
@@ -141,36 +138,3 @@ jobs:
               issue_number: issue.number,
               state: 'closed'
             });
-
-      - name: Send Discord notification
-        if: success()
-        env:
-          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-          ITEM_NAME: ${{ steps.extract.outputs.item_name }}
-          ISSUE_NUMBER: ${{ steps.extract.outputs.issue_number }}
-          REPO: ${{ github.repository }}
-        run: |
-          curl -s -X POST "$DISCORD_WEBHOOK" \
-            -H "Content-Type: application/json" \
-            -d "{
-              \"embeds\": [{
-                \"title\": \"Contribution merged\",
-                \"description\": \"**${ITEM_NAME}** has been added to \`price-overrides.json\`.\",
-                \"color\": 5763719,
-                \"fields\": [
-                  {
-                    \"name\": \"Repository\",
-                    \"value\": \"${REPO}\",
-                    \"inline\": true
-                  },
-                  {
-                    \"name\": \"Issue\",
-                    \"value\": \"#${ISSUE_NUMBER}\",
-                    \"inline\": true
-                  }
-                ],
-                \"footer\": {
-                  \"text\": \"GitHub Actions\"
-                }
-              }]
-            }"
