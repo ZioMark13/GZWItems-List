@@ -1,0 +1,12 @@
+[
+  {
+    "id": "complex-glass-electrode",
+    "name": "Complex Glass Electrode",
+    "type": "materials",
+    "category": "Electronics",
+    "weight": 0.45,
+    "imageUrl": "https://i.ibb.co/6cSxdYXq/image.png",
+    "description": "An engineered glass electrode designed to measure ionic activity in liquids. Useful for building and upgrading Hideout stations.",
+    "addedAt": "2026-10-26T17:14:45.570Z"
+  }
+]
