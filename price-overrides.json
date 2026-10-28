@@ -148,6 +148,11 @@
   "dark-star-iced-coffee": {
     "price": 6
   },
+  "dynamo": {
+    "price": 150,
+    "gridSize": "2x2",
+    "weight": 3
+  },
   "electrical-parts": {
     "price": 60,
     "gridSize": "2x2",
