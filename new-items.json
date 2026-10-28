@@ -126,6 +126,18 @@
     "addedAt": "2026-10-28T10:19:04.830Z"
   },
   {
+    "id": "iron-sucrose",
+    "name": "Iron Sucrose",
+    "type": "materials",
+    "category": "Crafting Material",
+    "price": 30,
+    "gridSize": "1x1",
+    "weight": 0.05,
+    "imageUrl": "https://i.ibb.co/ynq9CVJS/image.png",
+    "description": "An iron complex used to replenish the body's iron stores and support the production of hemoglobin and red blood cells. Suitable for use in the production of stimulants.",
+    "addedAt": "2026-10-28T10:30:53.581Z"
+  },
+  {
     "id": "mechanical-pipette",
     "name": "Mechanical Pipette",
     "type": "materials",
