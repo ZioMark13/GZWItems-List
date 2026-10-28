@@ -201,6 +201,18 @@
     "addedAt": "2026-10-26T17:12:02.310Z"
   },
   {
+    "id": "saline",
+    "name": "Saline",
+    "type": "materials",
+    "category": "Production Material",
+    "price": 15,
+    "gridSize": "2x1",
+    "weight": 1,
+    "imageUrl": "https://i.ibb.co/PZWjvMBC/image.png",
+    "description": "A sterile saline solution with a variety of laboratory and medical applications, including wound cleaning, nasal rinsing, and contamination control. It also serves as a suitable base for morphine solutions.",
+    "addedAt": "2026-10-28T10:29:00.727Z"
+  },
+  {
     "id": "signal-generator",
     "name": "Signal Generator",
     "type": "materials",
