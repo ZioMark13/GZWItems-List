@@ -211,6 +211,18 @@
     "addedAt": "2026-10-26T21:39:28.955Z"
   },
   {
+    "id": "theophylline",
+    "name": "Theophylline",
+    "type": "materials",
+    "category": "Crafting Material",
+    "price": 30,
+    "gridSize": "1x1",
+    "weight": 0.1,
+    "imageUrl": "https://i.ibb.co/p669RrzB/image.png",
+    "description": "A methylxanthine compound with stimulant and bronchodilatory properties, capable of increasing central nervous system activity while relaxing smooth muscle in the airways. Suitable for use in the production of stimulants.",
+    "addedAt": "2026-10-28T10:31:43.361Z"
+  },
+  {
     "id": "water-pump",
     "name": "Water Pump",
     "type": "materials",
