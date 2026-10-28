@@ -144,6 +144,18 @@
     "addedAt": "2026-10-26T21:31:49.884Z"
   },
   {
+    "id": "phon-chai-farm-shed-key",
+    "name": "Phon Chai Farm Shed Key",
+    "type": "keys",
+    "category": "YBL-1",
+    "price": 60,
+    "gridSize": "1x1",
+    "weight": 0.01,
+    "imageUrl": "https://i.ibb.co/r2HsQNqd/image.png",
+    "description": "A key to storage shed at Phon Chai Farm.",
+    "addedAt": "2026-10-28T10:35:41.205Z"
+  },
+  {
     "id": "purified-water",
     "name": "Purified Water",
     "type": "materials",
