@@ -114,6 +114,18 @@
     "addedAt": "2026-10-26T21:34:59.928Z"
   },
   {
+    "id": "gray-heroin",
+    "name": "Gray Heroin",
+    "type": "materials",
+    "category": "Laboratory Supplies",
+    "price": 7000,
+    "gridSize": "2x2",
+    "weight": 1,
+    "imageUrl": "https://i.ibb.co/dsnV2rvY/image.png",
+    "description": "A highly addictive opioid substance of relatively low purity. Valuable to those with few morals and the right connections on the black market.",
+    "addedAt": "2026-10-28T10:19:04.830Z"
+  },
+  {
     "id": "mechanical-pipette",
     "name": "Mechanical Pipette",
     "type": "materials",
