@@ -137,6 +137,11 @@
     "gridSize": "3x3",
     "weight": 10
   },
+  "copper": {
+    "price": 30,
+    "gridSize": "3x3",
+    "weight": 3
+  },
   "cowboy-baked-beans": {
     "price": 11
   },
