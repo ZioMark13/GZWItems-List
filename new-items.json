@@ -11,6 +11,18 @@
     "addedAt": "2026-10-28T10:27:07.247Z"
   },
   {
+    "id": "ammonium-chloride",
+    "name": "Ammonium Chloride",
+    "type": "materials",
+    "category": "Production Material",
+    "price": 45,
+    "gridSize": "2x1",
+    "weight": 0.5,
+    "imageUrl": "https://i.ibb.co/yn0Z9T1M/image.png",
+    "description": "An inorganic compound commonly used as a fertilizer for crops such as rice and wheat. Prolonged application can increase soil acidity, so it should be used with caution. It can also be used in the extraction of morphine from opium.",
+    "addedAt": "2026-10-28T10:28:03.638Z"
+  },
+  {
     "id": "analog-indicator",
     "name": "Analog Indicator",
     "type": "materials",
