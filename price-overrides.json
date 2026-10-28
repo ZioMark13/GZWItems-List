@@ -202,6 +202,11 @@
     "price": 90,
     "weight": 0.01
   },
+  "glass": {
+    "price": 45,
+    "gridSize": "3x3",
+    "weight": 4
+  },
   "graphics-card": {
     "price": 150,
     "gridSize": "2x1",
