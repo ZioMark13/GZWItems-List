@@ -1,5 +1,16 @@
 [
   {
+    "id": "acetic-anhydride",
+    "name": "Acetic Anhydride",
+    "type": "materials",
+    "category": "Production Material",
+    "gridSize": "1x2",
+    "weight": 1,
+    "imageUrl": "https://i.ibb.co/35XyfNtm/image.png",
+    "description": "A colorless liquid with a strong, pungent odor, commonly used in the production of photographic film and cigarette filters. Its availability is restricted due to its potential for criminal misuse, particularly in the production of gray heroin.",
+    "addedAt": "2026-10-28T10:27:07.247Z"
+  },
+  {
     "id": "analog-indicator",
     "name": "Analog Indicator",
     "type": "materials",
