@@ -97,6 +97,11 @@
   "biometric-access-card": {
     "price": 2000
   },
+  "burner-head": {
+    "price": 15,
+    "gridSize": "1x1",
+    "weight": 0.25
+  },
   "c101-key": {
     "price": 90,
     "weight": 0
