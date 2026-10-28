@@ -127,6 +127,11 @@
     "price": 24,
     "weight": 0.09
   },
+  "construction-material": {
+    "price": 15,
+    "gridSize": "3x3",
+    "weight": 10
+  },
   "cowboy-baked-beans": {
     "price": 11
   },
