@@ -9,6 +9,12 @@
   "5-45x39mm-bp-7n22": {
     "price": 2
   },
+  "7-62x39mm-pp-7n27": {
+    "price": 1.3,
+    "gridSize": "1x1",
+    "weight": 0.016,
+    "imageUrl": "https://i.ibb.co/27dVKTHf/grafik.png"
+  },
   "7-62x51mm-ap-m61": {
     "price": 28,
     "weight": 0.98
