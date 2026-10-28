@@ -138,6 +138,11 @@
   "dark-star-iced-coffee": {
     "price": 6
   },
+  "electrical-parts": {
+    "price": 60,
+    "gridSize": "2x2",
+    "weight": 1
+  },
   "emergency-suture-kit": {
     "price": 54,
     "weight": 0.2
