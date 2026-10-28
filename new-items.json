@@ -23,6 +23,18 @@
     "addedAt": "2026-10-26T21:38:21.843Z"
   },
   {
+    "id": "bromopyridine",
+    "name": "Bromopyridine",
+    "type": "materials",
+    "category": "Crafting Material",
+    "price": 30,
+    "gridSize": "1x1",
+    "weight": 0.5,
+    "imageUrl": "https://i.ibb.co/xqm7Xt3d/image.png",
+    "description": "A halogenated pyridine compound commonly used as a chemical intermediate in the synthesis of more complex organic substances. Suitable for use in the production of stimulants.",
+    "addedAt": "2026-10-28T10:33:23.724Z"
+  },
+  {
     "id": "circuit-board",
     "name": "Circuit Board",
     "type": "materials",
