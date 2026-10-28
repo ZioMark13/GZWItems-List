@@ -202,6 +202,11 @@
     "price": 90,
     "weight": 0.01
   },
+  "graphics-card": {
+    "price": 150,
+    "gridSize": "2x1",
+    "weight": 0.5
+  },
   "gray-focused-energy": {
     "price": 21
   },
