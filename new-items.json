@@ -89,6 +89,15 @@
     "addedAt": "2026-10-26T21:41:03.029Z"
   },
   {
+    "id": "multi-bus-converter",
+    "name": "Multi-Bus Converter",
+    "type": "materials",
+    "category": "Electronics",
+    "weight": 0.25,
+    "description": "An industrial-grade serial communication adapter designed to bridge different hardware communication protocols. An essential for constructing a basic hacking tool.",
+    "addedAt": "2026-10-28T04:56:16.090Z"
+  },
+  {
     "id": "multimeter",
     "name": "Multimeter",
     "type": "materials",
