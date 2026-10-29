@@ -192,6 +192,18 @@
     "addedAt": "2026-10-28T10:35:41.205Z"
   },
   {
+    "id": "power-supply",
+    "name": "Power Supply",
+    "type": "materials",
+    "category": "Building Material",
+    "price": 75,
+    "gridSize": "2x2",
+    "weight": 1,
+    "imageUrl": "https://i.ibb.co/d4Sqm96B/powersupply.jpg",
+    "description": "A computer component that converts electrical power and supplies the appropriate voltages to the system's internal components. Useful for building and upgrading Hideout stations.",
+    "addedAt": "2026-10-29T14:00:13.149Z"
+  },
+  {
     "id": "purified-water",
     "name": "Purified Water",
     "type": "materials",
