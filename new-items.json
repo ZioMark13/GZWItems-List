@@ -225,6 +225,18 @@
     "addedAt": "2026-10-28T10:29:00.727Z"
   },
   {
+    "id": "server-cpu",
+    "name": "Server CPU",
+    "type": "materials",
+    "category": "Building Material",
+    "price": 180,
+    "gridSize": "1x1",
+    "weight": 0.08,
+    "imageUrl": "https://i.ibb.co/0wFGKxN/server-cpu.webp",
+    "description": "A specialized processing unit designed to handle a large number of simultaneous processing threads. Useful for building and upgrading Hideout stations.",
+    "addedAt": "2026-10-29T14:01:38.144Z"
+  },
+  {
     "id": "signal-generator",
     "name": "Signal Generator",
     "type": "materials",
