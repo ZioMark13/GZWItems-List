@@ -80,6 +80,16 @@
     "addedAt": "2026-10-29T14:03:43.982Z"
   },
   {
+    "id": "cnc-drill-bits",
+    "name": "CNC Drill Bits",
+    "type": "materials",
+    "weight": 0.42,
+    "imageUrl": "https://i.imgur.com/cvSEVHb.png",
+    "category": "Building Material",
+    "description": "High-precision drill bits made from high-grade steel for exceptional durability and wear resistance. Built to last a lifetime. Useful for building and upgrading Hideout stations.",
+    "addedAt": "2026-10-29T16:42:57.590Z"
+  },
+  {
     "id": "complex-glass-electrode",
     "name": "Complex Glass Electrode",
     "type": "materials",
@@ -95,10 +105,11 @@
     "type": "materials",
     "weight": 0.07,
     "gridSize": "1x1",
-    "imageUrl": "https://i.imgur.com/3N62aja.png",
+    "imageUrl": "https://i.imgur.com/vDRzxIS.png",
     "category": "Building Material",
-    "description": "The primary processing component of a computer, responsible for executing program instructions and performing calculations. useful for building and upgrading Hideout stations.",
-    "addedAt": "2026-10-29T16:20:09.140Z"
+    "description": "A primary processing component of a computer, responsible for executing program instructions and performing calculations. Useful for building and upgrading Hideout stations.",
+    "addedAt": "2026-10-29T16:33:01.837Z",
+    "price": 90
   },
   {
     "id": "empty-autoinjector",
@@ -123,6 +134,18 @@
     "imageUrl": "https://i.ibb.co/1JtfQ2yB/image.png",
     "description": "A roll of durable cloth fabric suitable for insulation, filtration, padding and other practical uses. Useful for building and upgrading Hideout stations.",
     "addedAt": "2026-10-26T21:29:48.633Z"
+  },
+  {
+    "id": "fine-metal-mesh",
+    "name": "Fine Metal Mesh",
+    "type": "materials",
+    "price": 75,
+    "weight": 1.5,
+    "gridSize": "2x3",
+    "imageUrl": "https://i.imgur.com/1M9pPef.png",
+    "category": "Building Material",
+    "description": "A fine metal mesh ideal for filtration, allowing water to pass through while leaving solid particles behind. Useful for building and upgrading Hideout stations.",
+    "addedAt": "2026-10-29T16:35:09.092Z"
   },
   {
     "id": "garden-lime",
@@ -169,6 +192,16 @@
     "imageUrl": "https://i.ibb.co/ynq9CVJS/image.png",
     "description": "An iron complex used to replenish the body's iron stores and support the production of hemoglobin and red blood cells. Suitable for use in the production of stimulants.",
     "addedAt": "2026-10-28T10:30:53.581Z"
+  },
+  {
+    "id": "laser-tube",
+    "name": "Laser Tube",
+    "type": "materials",
+    "weight": 0.21,
+    "imageUrl": "https://i.imgur.com/iw1H1uz.png",
+    "category": "Building Material",
+    "description": "A device containing a crystal and optical components designed to generate and direct light into a narrow, concentrated beam. Useful for building and upgrading Hideout stations.",
+    "addedAt": "2026-10-29T16:41:10.217Z"
   },
   {
     "id": "mechanical-pipette",
@@ -223,6 +256,16 @@
     "imageUrl": "https://i.ibb.co/6R2CyRPY/image.png",
     "description": "A sticky, gum-like substance collected by scoring poppy seedpods. An essential raw material for opiate production.",
     "addedAt": "2026-10-26T21:31:49.884Z"
+  },
+  {
+    "id": "oscilloscope",
+    "name": "Oscilloscope",
+    "type": "materials",
+    "weight": 3,
+    "imageUrl": "https://i.imgur.com/WlZWwCw.png",
+    "category": "Building Material",
+    "description": "A specialized electronic instrument used to visualize and analyze electrical signals as they change over time. Useful for building and upgrading Hideout stations.",
+    "addedAt": "2026-10-29T16:39:34.890Z"
   },
   {
     "id": "pc-fan",
@@ -351,6 +394,30 @@
     "addedAt": "2026-10-26T21:39:28.955Z"
   },
   {
+    "id": "soldering-iron",
+    "name": "Soldering Iron",
+    "type": "materials",
+    "price": 30,
+    "weight": 0.3,
+    "gridSize": "1x1",
+    "imageUrl": "https://i.imgur.com/HvKEnuS.png",
+    "category": "Building Material",
+    "description": "A handheld tool used to melt solder, allowing electrical components and connections to be joined together. Useful for building and upgrading Hideout stations.",
+    "addedAt": "2026-10-29T16:28:09.332Z"
+  },
+  {
+    "id": "stainless-steel-sheet",
+    "name": "Stainless Steel Sheet",
+    "type": "materials",
+    "price": 45,
+    "weight": 2,
+    "gridSize": "2x3",
+    "imageUrl": "https://i.imgur.com/rhKTTwE.png",
+    "category": "Building Material",
+    "description": "A sheet of stainless steel resistant to most common corrosive chemicals. Useful for building and upgrading Hideout stations.",
+    "addedAt": "2026-10-29T16:37:32.545Z"
+  },
+  {
     "id": "theophylline",
     "name": "Theophylline",
     "type": "materials",
@@ -363,6 +430,18 @@
     "addedAt": "2026-10-28T10:31:43.361Z"
   },
   {
+    "id": "tooling-coolant",
+    "name": "Tooling Coolant",
+    "type": "materials",
+    "price": 75,
+    "weight": 2,
+    "gridSize": "2x2",
+    "imageUrl": "https://i.imgur.com/6SExxY6.png",
+    "category": "Building Material",
+    "description": "A specialized coolant used to reduce heat and friction during precision machining. Essential for accurate and reliable tooling operations. Useful for building and upgrading Hideout stations.",
+    "addedAt": "2026-10-29T16:30:16.005Z"
+  },
+  {
     "id": "water-pump",
     "name": "Water Pump",
     "type": "materials",
@@ -373,5 +452,17 @@
     "imageUrl": "https://i.ibb.co/CKKSjvrV/image.png",
     "description": "A small powered device designed to move liquids from one place to another. Useful for building and upgrading Hideout stations.",
     "addedAt": "2026-10-26T21:26:38.392Z"
+  },
+  {
+    "id": "zinc-electrode",
+    "name": "Zinc Electrode",
+    "type": "materials",
+    "price": 120,
+    "weight": 0.5,
+    "gridSize": "2x1",
+    "imageUrl": "https://i.imgur.com/y1LRfHb.png",
+    "category": "Building Material",
+    "description": "A zinc electrode that serves as a source of zinc atoms during the galvanization process. Useful for building and upgrading Hideout stations.",
+    "addedAt": "2026-10-29T16:45:24.122Z"
   }
 ]
