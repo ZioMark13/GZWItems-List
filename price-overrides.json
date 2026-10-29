@@ -115,6 +115,11 @@
   "canned-tuna-chunks": {
     "price": 7
   },
+  "chemicals": {
+    "price": 90,
+    "weight": 1,
+    "gridSize": "2x2"
+  },
   "circuit-board": {
     "price": 45,
     "gridSize": "1x1",
@@ -300,6 +305,11 @@
     "price": 11,
     "energy": "+10"
   },
+  "mechanical-parts": {
+    "price": 60,
+    "weight": 1,
+    "gridSize": "2x2"
+  },
   "medium-blood-bag": {
     "price": 225,
     "weight": 1.6
@@ -352,6 +362,11 @@
   "pha-lang-restaurant-storage-key": {
     "price": 29,
     "weight": 0.01
+  },
+  "plastics": {
+    "price": 15,
+    "weight": 1,
+    "gridSize": "2x1"
   },
   "potassium-iodide": {
     "price": 36,
