@@ -90,6 +90,17 @@
     "addedAt": "2026-10-26T17:14:45.570Z"
   },
   {
+    "id": "cpu",
+    "name": "CPU",
+    "type": "materials",
+    "weight": 0.07,
+    "gridSize": "1x1",
+    "imageUrl": "https://i.imgur.com/3N62aja.png",
+    "category": "Building Material",
+    "description": "The primary processing component of a computer, responsible for executing program instructions and performing calculations. useful for building and upgrading Hideout stations.",
+    "addedAt": "2026-10-29T16:20:09.140Z"
+  },
+  {
     "id": "empty-autoinjector",
     "name": "Empty Autoinjector",
     "type": "materials",
@@ -138,6 +149,16 @@
     "addedAt": "2026-10-28T10:19:04.830Z"
   },
   {
+    "id": "hepa-filter",
+    "name": "HEPA Filter",
+    "type": "materials",
+    "weight": 2,
+    "imageUrl": "https://i.imgur.com/Fmu1Afz.png",
+    "category": "Building Material",
+    "description": "A high-efficiency air filter designed to capture fine airborne particles and contaminants. Useful for building and upgrading Hideout stations.",
+    "addedAt": "2026-10-29T16:25:12.405Z"
+  },
+  {
     "id": "iron-sucrose",
     "name": "Iron Sucrose",
     "type": "materials",
@@ -158,6 +179,18 @@
     "imageUrl": "https://i.ibb.co/pjnZfL3m/image.png",
     "description": "A mechanical pipette that makes laboratory work faster, safer, and more precise. No more sucking chemicals into a glass pipette by mouth. Useful for building and upgrading Hideout stations.",
     "addedAt": "2026-10-26T21:41:03.029Z"
+  },
+  {
+    "id": "military-software",
+    "name": "Military Software",
+    "type": "materials",
+    "price": 75,
+    "weight": 0.03,
+    "gridSize": "1x1",
+    "imageUrl": "https://i.imgur.com/w2dgjnf.png",
+    "category": "Building Material",
+    "description": "A USB drive containing specialized military software, including targeting solutions, personnel tracking tools, and other applications, along with a selection of classified data. Useful for building and upgrading Hideout stations.",
+    "addedAt": "2026-10-29T16:21:38.343Z"
   },
   {
     "id": "multi-bus-converter",
@@ -196,9 +229,12 @@
     "name": "PC Fan",
     "type": "materials",
     "gridSize": "1x1",
-    "imageUrl": "https://i.imgur.com/A5Dedhm.png",
-    "category": "Electronics",
-    "addedAt": "2026-10-29T15:26:32.630Z"
+    "imageUrl": "https://i.imgur.com/wLbnFKx.png",
+    "category": "Building Material",
+    "addedAt": "2026-10-29T16:22:57.335Z",
+    "price": 15,
+    "weight": 0.12,
+    "description": "A cooling fan taken from a PC. Surprisingly dustless. Useful for building and upgrading Hideout stations."
   },
   {
     "id": "phon-chai-farm-shed-key",
@@ -237,6 +273,18 @@
     "addedAt": "2026-10-26T21:37:14.445Z"
   },
   {
+    "id": "ram",
+    "name": "RAM",
+    "type": "materials",
+    "price": 90,
+    "weight": 0.3,
+    "gridSize": "1x1",
+    "imageUrl": "https://i.imgur.com/7mR3mrA.png",
+    "category": "Building Material",
+    "description": "Random-access memory used to temporarily store data for quick access by the processor. Generally, the more you have, the better. Useful for building and upgrading Hideout stations.",
+    "addedAt": "2026-10-29T16:20:43.580Z"
+  },
+  {
     "id": "refrigerant",
     "name": "Refrigerant",
     "type": "materials",
@@ -268,6 +316,17 @@
     "imageUrl": "https://i.ibb.co/0wFGKxN/server-cpu.webp",
     "description": "A specialized processing unit designed to handle a large number of simultaneous processing threads. Useful for building and upgrading Hideout stations.",
     "addedAt": "2026-10-29T14:01:38.144Z"
+  },
+  {
+    "id": "server-ram-module",
+    "name": "Server RAM Module",
+    "type": "materials",
+    "price": 900,
+    "weight": 0.05,
+    "gridSize": "2x1",
+    "imageUrl": "https://i.imgur.com/7hxXJ4w.png",
+    "category": "Crafting Material",
+    "addedAt": "2026-10-29T16:17:23.085Z"
   },
   {
     "id": "signal-generator",
