@@ -192,6 +192,15 @@
     "addedAt": "2026-10-26T21:31:49.884Z"
   },
   {
+    "id": "pc-fan",
+    "name": "PC Fan",
+    "type": "materials",
+    "gridSize": "1x1",
+    "imageUrl": "https://i.imgur.com/A5Dedhm.png",
+    "category": "Electronics",
+    "addedAt": "2026-10-29T15:26:32.630Z"
+  },
+  {
     "id": "phon-chai-farm-shed-key",
     "name": "Phon Chai Farm Shed Key",
     "type": "keys",
