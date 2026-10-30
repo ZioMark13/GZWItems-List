@@ -442,6 +442,30 @@
     "addedAt": "2026-10-29T16:30:16.005Z"
   },
   {
+    "id": "un-medical-tools",
+    "name": "UN Medical Tools",
+    "type": "loot",
+    "price": 16,
+    "weight": 0.5,
+    "gridSize": "2x1",
+    "imageUrl": "https://i.imgur.com/w2xbtAQ.png",
+    "category": "Laboratory Supplies",
+    "description": "A box containing select surgical tools, pills, and materials. It is an emergency health pack provided to UN employees.",
+    "addedAt": "2026-10-29T17:34:01.662Z"
+  },
+  {
+    "id": "vapor-lamp",
+    "name": "Vapor Lamp",
+    "type": "materials",
+    "price": 150,
+    "weight": 0.05,
+    "gridSize": "1x1",
+    "imageUrl": "https://i.imgur.com/mmhBzla.png",
+    "category": "Building Material",
+    "description": "A vapor lamp that emits light within a very narrow spectral range, making it a useful light source for high precision analysis. Useful for building and upgrading Hideout stations.",
+    "addedAt": "2026-10-29T17:41:37.305Z"
+  },
+  {
     "id": "water-pump",
     "name": "Water Pump",
     "type": "materials",
