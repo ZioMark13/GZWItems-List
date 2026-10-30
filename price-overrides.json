@@ -430,6 +430,11 @@
   "pro-multitool": {
     "price": 50
   },
+  "refrigerant": {
+    "price": 45,
+    "weight": 3,
+    "gridSize": "3x2"
+  },
   "retractable-tourniquet": {
     "price": 7,
     "weight": 0.08
