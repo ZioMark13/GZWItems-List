@@ -133,6 +133,12 @@
     "price": 2,
     "weight": 0.03
   },
+  "cnc-drill-bits": {
+    "price": 60,
+    "weight": 0.42,
+    "gridSize": "1x1",
+    "imageUrl": "https://i.imgur.com/ZPuTOZV.png"
+  },
   "coco-jumbo-coconut-juice-drink": {
     "price": 2
   },
@@ -310,6 +316,11 @@
     "weight": 1,
     "gridSize": "2x2"
   },
+  "mechanical-pipette": {
+    "weight": 0.13,
+    "gridSize": "2x1",
+    "imageUrl": "https://i.imgur.com/cNp3JmU.png"
+  },
   "medium-blood-bag": {
     "price": 225,
     "weight": 1.6
@@ -321,6 +332,12 @@
   "morphine": {
     "price": 135,
     "weight": 0.1
+  },
+  "motherboard": {
+    "price": 90,
+    "weight": 0,
+    "gridSize": "2x2",
+    "imageUrl": "https://i.imgur.com/gQ0RLRb.png"
   },
   "moxifloxacin": {
     "price": 37,
@@ -368,6 +385,12 @@
     "weight": 1,
     "gridSize": "2x1"
   },
+  "plumbing-parts": {
+    "price": 60,
+    "weight": 1,
+    "gridSize": "2x2",
+    "imageUrl": "https://i.ibb.co/B5GKQfvG/image.png"
+  },
   "potassium-iodide": {
     "price": 36,
     "weight": 0.05
@@ -400,6 +423,13 @@
     "price": 16,
     "weight": 0.09
   },
+  "signal-generator": {
+    "price": 150,
+    "gridSize": "2x2"
+  },
+  "signal-repeater-rt97s": {
+    "price": 720
+  },
   "sinngua-lunch-meat": {
     "price": 15
   },
@@ -420,6 +450,12 @@
   },
   "spicy-thai-combat-meal": {
     "price": 17
+  },
+  "steel": {
+    "price": 30,
+    "weight": 4.4,
+    "gridSize": "4x2",
+    "imageUrl": "https://i.ibb.co/gL27nSnP/image.png"
   },
   "strelets-m-tablet": {
     "weight": 1.4
@@ -449,6 +485,11 @@
     "price": 90,
     "weight": 0.01
   },
+  "vial-of-antigens": {
+    "price": 1010,
+    "gridSize": "1x1",
+    "imageUrl": "https://i.imgur.com/Dv1mtQz.png"
+  },
   "villa-vongphet-room-key": {
     "price": 59,
     "weight": 0.01
@@ -458,5 +499,11 @@
   },
   "windmill-almond-chocolate-bar": {
     "price": 11
+  },
+  "wood": {
+    "price": 15,
+    "weight": 3,
+    "gridSize": "4x1",
+    "imageUrl": "https://i.ibb.co/TqLpKgHH/image.png"
   }
 }
