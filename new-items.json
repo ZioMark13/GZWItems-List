@@ -1,5 +1,17 @@
 [
   {
+    "id": "10-morphine-solution",
+    "name": "10% Morphine Solution",
+    "type": "loot",
+    "price": 4000,
+    "weight": 5,
+    "gridSize": "2x2",
+    "imageUrl": "https://i.imgur.com/3tbAm4N.png",
+    "category": "Laboratory Supplies",
+    "description": "A morphine solution from low-quality morphine base. The presence of impurities makes it unsuitable for direct use, but it may still be valuable in the hands of experienced medical personnel.",
+    "addedAt": "2026-10-30T16:12:31.620Z"
+  },
+  {
     "id": "acetic-anhydride",
     "name": "Acetic Anhydride",
     "type": "materials",
@@ -464,6 +476,18 @@
     "category": "Laboratory Supplies",
     "description": "A box containing select surgical tools, pills, and materials. It is an emergency health pack provided to UN employees.",
     "addedAt": "2026-10-29T17:34:01.662Z"
+  },
+  {
+    "id": "unlra-relief-manifest",
+    "name": "UNLRA Relief Manifest",
+    "type": "loot",
+    "price": 6400,
+    "weight": 0.24,
+    "gridSize": "1x1",
+    "imageUrl": "https://i.imgur.com/EG4HyYj.png",
+    "category": "Tech",
+    "description": "An external hard drive containing sensitive UNLRA communication logs, evacuation data, and operational protocols.",
+    "addedAt": "2026-10-30T16:16:22.811Z"
   },
   {
     "id": "vapor-lamp",
