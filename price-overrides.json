@@ -54,6 +54,9 @@
     "weight": 0,
     "price": 17
   },
+  "an-pyq-10": {
+    "price": 3360
+  },
   "aques-water-1-5-l": {
     "price": 16
   },
@@ -101,6 +104,9 @@
     "hydration": "0"
   },
   "biometric-access-card": {
+    "price": 2000
+  },
+  "biometric-thumb-drive": {
     "price": 2000
   },
   "burner-head": {
@@ -237,6 +243,9 @@
   "gray-focused-energy": {
     "price": 21
   },
+  "handheld-ecm-jammer": {
+    "price": 760
+  },
   "hangar-03-key": {
     "price": 59,
     "weight": 0.01
@@ -248,6 +257,9 @@
   "heavenly-perfume-bottle": {
     "weight": 0.15,
     "gridSize": "1x1"
+  },
+  "hgcs-30-uav-control-station": {
+    "price": 2080
   },
   "hotel-supply-closet-key-card": {
     "price": 90,
@@ -348,6 +360,12 @@
     "price": 37,
     "weight": 0.05
   },
+  "multi-bus-converter": {
+    "price": 600,
+    "weight": 0.25,
+    "gridSize": "1x1",
+    "imageUrl": "https://i.imgur.com/GqU9tjH.png"
+  },
   "noakon-water-0-6-l": {
     "price": 6
   },
@@ -356,6 +374,9 @@
   },
   "nuklear-energy-meltdown-mango": {
     "price": 10
+  },
+  "one-time-pad-key-sheets": {
+    "price": 2560
   },
   "operation-data-encrypted-hard-disk": {
     "price": 4900,
