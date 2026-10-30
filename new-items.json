@@ -112,6 +112,18 @@
     "price": 90
   },
   {
+    "id": "crystal-prism",
+    "name": "Crystal Prism",
+    "type": "materials",
+    "price": 150,
+    "weight": 0.035,
+    "gridSize": "1x1",
+    "imageUrl": "https://i.ibb.co/C5skTdRm/Crystal-Prism-inspect.webp",
+    "category": "Building Material",
+    "description": "A precisely calibrated prism that refracts light, allowing it to be separated into its full spectrum. Useful for building and upgrading Hideout stations.",
+    "addedAt": "2026-10-30T12:18:59.454Z"
+  },
+  {
     "id": "empty-autoinjector",
     "name": "Empty Autoinjector",
     "type": "materials",
