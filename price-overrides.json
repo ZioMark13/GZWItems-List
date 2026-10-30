@@ -149,6 +149,11 @@
     "price": 24,
     "weight": 0.09
   },
+  "complex-glass-electrode": {
+    "price": 150,
+    "weight": 0.45,
+    "gridSize": "1x2"
+  },
   "construction-material": {
     "price": 15,
     "gridSize": "3x3",
