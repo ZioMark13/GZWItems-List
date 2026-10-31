@@ -352,7 +352,8 @@
   "mechanical-pipette": {
     "weight": 0.13,
     "gridSize": "2x1",
-    "imageUrl": "https://i.imgur.com/cNp3JmU.png"
+    "imageUrl": "https://i.imgur.com/cNp3JmU.png",
+    "price": 150
   },
   "medium-blood-bag": {
     "price": 225,
