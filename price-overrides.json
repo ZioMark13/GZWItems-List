@@ -298,6 +298,10 @@
   "kasem-chocolate-wafers": {
     "price": 2
   },
+  "laf-artillery-data-log": {
+    "price": 6400,
+    "gridSize": "1x1"
+  },
   "large-blood-bag": {
     "price": 294,
     "weight": 2.1
