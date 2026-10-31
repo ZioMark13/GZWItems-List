@@ -336,6 +336,18 @@
     "addedAt": "2026-10-26T21:41:03.029Z"
   },
   {
+    "id": "microscope",
+    "name": "Microscope",
+    "type": "materials",
+    "price": 300,
+    "weight": 1.6,
+    "gridSize": "2x3",
+    "imageUrl": "https://i.imgur.com/8H1ctJh.png",
+    "category": "Building Material",
+    "description": "A precision optical instrument used to observe and work with components too small to be seen clearly by the naked eye. Useful for building and upgrading Hideout stations.",
+    "addedAt": "2026-10-31T10:22:33.740Z"
+  },
+  {
     "id": "military-software",
     "name": "Military Software",
     "type": "materials",
