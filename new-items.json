@@ -59,6 +59,28 @@
     "addedAt": "2026-10-31T01:01:00.774Z"
   },
   {
+    "id": "avionics-processor-board",
+    "name": "Avionics Processor Board",
+    "type": "materials",
+    "weight": 1,
+    "imageUrl": "https://i.imgur.com/HvPH8uc.png",
+    "category": "Crafting Material",
+    "description": "A processor board extracted from a Baget-53-31 avionics computer, equipped with powerful microchips capable of performing complex computations at high speed. An essential component for constructing an advanced hacking tool.",
+    "addedAt": "2026-10-31T12:34:13.628Z"
+  },
+  {
+    "id": "baget-53-31-onboard-computer",
+    "name": "Baget-53-31 Onboard Computer",
+    "type": "materials",
+    "price": 3000,
+    "weight": 5.5,
+    "gridSize": "2x3",
+    "imageUrl": "https://i.imgur.com/HY4NBh2.png",
+    "category": "Disassembly Material",
+    "description": "A powerful superscalar onboard computer capable of executing multiple instructions in parallel. Contains valuable flight logs and advanced electronic components useful for constructing hacking devices.",
+    "addedAt": "2026-10-31T12:32:42.343Z"
+  },
+  {
     "id": "bromopyridine",
     "name": "Bromopyridine",
     "type": "materials",
@@ -234,6 +256,16 @@
     "category": "Building Material",
     "description": "A fine metal mesh ideal for filtration, allowing water to pass through while leaving solid particles behind. Useful for building and upgrading Hideout stations.",
     "addedAt": "2026-10-29T16:35:09.092Z"
+  },
+  {
+    "id": "flight-data-drive",
+    "name": "Flight Data Drive",
+    "type": "loot",
+    "weight": 0.11,
+    "imageUrl": "https://i.imgur.com/nAH7Zk4.png",
+    "category": "Tech",
+    "description": "A rugged external hard drive containing aircraft flight data extracted from onboard systems, including recent mission records indicating the use of force against civilians.",
+    "addedAt": "2026-10-31T12:34:53.995Z"
   },
   {
     "id": "fpga-module",
