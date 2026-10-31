@@ -47,6 +47,18 @@
     "addedAt": "2026-10-26T21:38:21.843Z"
   },
   {
+    "id": "artillery-balistic-calculator",
+    "name": "Artillery Balistic Calculator",
+    "type": "materials",
+    "price": 1500,
+    "weight": 1.7,
+    "gridSize": "1x2",
+    "imageUrl": "https://i.imgur.com/CqG0u6O.png",
+    "category": "Disassembly Material",
+    "description": "A portable yet powerful computer capable of rapidly calculating accurate ballistic solutions for indirect-fire weapons. Contains valuable data on LAF artillery capabilities and electronic components useful for constructing hacking devices.",
+    "addedAt": "2026-10-31T01:01:00.774Z"
+  },
+  {
     "id": "bromopyridine",
     "name": "Bromopyridine",
     "type": "materials",
@@ -112,6 +124,18 @@
     "addedAt": "2026-10-26T17:14:45.570Z"
   },
   {
+    "id": "counter-ied-jammer-unit",
+    "name": "Counter IED/Jammer Unit",
+    "type": "materials",
+    "price": 4500,
+    "weight": 9,
+    "gridSize": "2x2",
+    "imageUrl": "https://i.imgur.com/48ogkFs.png",
+    "category": "Disassembly Material",
+    "description": "A programmable manpack jammer designed to disrupt nearby communication networks and electronic signals. Contains extremely valuable data on LAF electronic warfare capabilities and advanced electronic components useful for constructing hacking devices.",
+    "addedAt": "2026-10-31T01:16:10.855Z"
+  },
+  {
     "id": "cpu",
     "name": "CPU",
     "type": "materials",
@@ -124,6 +148,16 @@
     "price": 90
   },
   {
+    "id": "cpu-card",
+    "name": "CPU Card",
+    "type": "materials",
+    "weight": 0.3,
+    "imageUrl": "https://i.imgur.com/7hjjLCU.png",
+    "category": "Disassembly Material",
+    "description": "A CPU card extracted from an LAF artillery computer, providing enough processing power to perform dictionary attacks and generate PIN codes. An essential component for constructing a basic hacking tool.",
+    "addedAt": "2026-10-31T01:02:38.239Z"
+  },
+  {
     "id": "crystal-prism",
     "name": "Crystal Prism",
     "type": "materials",
@@ -134,6 +168,26 @@
     "category": "Building Material",
     "description": "A precisely calibrated prism that refracts light, allowing it to be separated into its full spectrum. Useful for building and upgrading Hideout stations.",
     "addedAt": "2026-10-30T12:18:59.454Z"
+  },
+  {
+    "id": "digital-synthesis-engine",
+    "name": "Digital Synthesis Engine",
+    "type": "materials",
+    "weight": 0.1,
+    "imageUrl": "https://i.imgur.com/jW2a9uy.png",
+    "category": "Crafting Material",
+    "description": "A specialized circuit board capable of generating arbitrary high-frequency analog waveforms with high precision. An essential component for constructing a superior hacking tool.",
+    "addedAt": "2026-10-31T01:19:28.950Z"
+  },
+  {
+    "id": "electronic-warfare-configuration-drive",
+    "name": "Electronic Warfare Configuration Drive",
+    "type": "loot",
+    "weight": 0.08,
+    "imageUrl": "https://i.imgur.com/0WyPilc.png",
+    "category": "Tech",
+    "description": "A reinforced external hard drive containing extracted configuration data for electronic warfare systems.",
+    "addedAt": "2026-10-31T01:17:44.341Z"
   },
   {
     "id": "empty-autoinjector",
@@ -218,6 +272,28 @@
     "addedAt": "2026-10-30T19:23:37.257Z"
   },
   {
+    "id": "imsi-catcher",
+    "name": "IMSI Catcher",
+    "type": "materials",
+    "price": 1500,
+    "weight": 8,
+    "gridSize": "2x2",
+    "imageUrl": "https://i.imgur.com/HtzR7Ph.png",
+    "category": "Disassembly Material",
+    "description": "A device that masquerades as a cell tower to intercept and monitor communications from nearby mobile devices. A useful tool for anyone interested in conversation they weren't invited to. Contains valuable electronic components useful for constructing hacking devices.",
+    "addedAt": "2026-10-31T00:58:02.577Z"
+  },
+  {
+    "id": "incriminating-phone-logs",
+    "name": "Incriminating Phone Logs",
+    "type": "loot",
+    "weight": 0.24,
+    "imageUrl": "https://i.imgur.com/cPtWPrz.png",
+    "category": "Tech",
+    "description": "An external hard drive containing phone communication data collected from Midnight Sapphire and the surrounding area. The data includes phone numbers and incriminating SMS messages exchanged by foreign visitors.",
+    "addedAt": "2026-10-31T01:06:22.573Z"
+  },
+  {
     "id": "iron-sucrose",
     "name": "Iron Sucrose",
     "type": "materials",
@@ -228,6 +304,16 @@
     "imageUrl": "https://i.ibb.co/ynq9CVJS/image.png",
     "description": "An iron complex used to replenish the body's iron stores and support the production of hemoglobin and red blood cells. Suitable for use in the production of stimulants.",
     "addedAt": "2026-10-28T10:30:53.581Z"
+  },
+  {
+    "id": "laf-artillery-data-log",
+    "name": "LAF Artillery Data Log",
+    "type": "loot",
+    "weight": 0.24,
+    "imageUrl": "https://i.imgur.com/Z73Bt8d.png",
+    "category": "Tech",
+    "description": "An external hard drive containing ballistic solution logs extracted from LAF artillery computers. The data reveals details about the LAF arsenal and indications that civilians were deliberately targeted on multiple occasions.",
+    "addedAt": "2026-10-31T01:04:41.262Z"
   },
   {
     "id": "laser-tube",
@@ -461,6 +547,16 @@
     "category": "Building Material",
     "description": "A handheld tool used to melt solder, allowing electrical components and connections to be joined together. Useful for building and upgrading Hideout stations.",
     "addedAt": "2026-10-29T16:28:09.332Z"
+  },
+  {
+    "id": "spoofing-asic-module",
+    "name": "Spoofing ASIC Module",
+    "type": "materials",
+    "weight": 0.32,
+    "imageUrl": "https://i.imgur.com/cx1LoY6.png",
+    "category": "Crafting Material",
+    "description": "A specialized electronic module built around an application-specific integrated circuit (ASIC), designed to emulate, override, and spoof nearby wireless signatures and reproduce signal handshakes. An essential component for constructing a basic hacking tool.",
+    "addedAt": "2026-10-31T01:08:17.788Z"
   },
   {
     "id": "stainless-steel-sheet",
