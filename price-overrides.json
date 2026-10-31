@@ -307,6 +307,11 @@
     "weight": 0.15,
     "price": 63
   },
+  "laser-tube": {
+    "price": 150,
+    "gridSize": "3x1",
+    "imageUrl": "https://i.imgur.com/IGSkb3r.png"
+  },
   "ltsd-4-3-laser-designator": {
     "price": 64000
   },
