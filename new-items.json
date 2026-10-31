@@ -202,6 +202,16 @@
     "addedAt": "2026-10-26T21:33:30.214Z"
   },
   {
+    "id": "encryption-key-drive",
+    "name": "Encryption Key Drive",
+    "type": "materials",
+    "weight": 0.11,
+    "imageUrl": "https://i.imgur.com/yFM2rZq.png",
+    "category": "Disassembly Material",
+    "description": "A rugged external hard drive containing extracted LAF encryption keys, posing a serious threat to the security of their communications.",
+    "addedAt": "2026-10-31T11:13:30.038Z"
+  },
+  {
     "id": "fabrics",
     "name": "Fabrics",
     "type": "materials",
@@ -224,6 +234,16 @@
     "category": "Building Material",
     "description": "A fine metal mesh ideal for filtration, allowing water to pass through while leaving solid particles behind. Useful for building and upgrading Hideout stations.",
     "addedAt": "2026-10-29T16:35:09.092Z"
+  },
+  {
+    "id": "fpga-module",
+    "name": "FPGA Module",
+    "type": "materials",
+    "weight": 0.2,
+    "imageUrl": "https://i.imgur.com/qFvBCeR.png",
+    "category": "Disassembly Material",
+    "description": "A specialized circuit board built around a field-programmable gate array (FPGA), allowing its hardware logic to be dynamically reconfigured for different tasks. An essential component for constructing an advanced hacking tool.",
+    "addedAt": "2026-10-31T11:35:51.608Z"
   },
   {
     "id": "garden-lime",
@@ -324,6 +344,18 @@
     "category": "Building Material",
     "description": "A device containing a crystal and optical components designed to generate and direct light into a narrow, concentrated beam. Useful for building and upgrading Hideout stations.",
     "addedAt": "2026-10-29T16:41:10.217Z"
+  },
+  {
+    "id": "manpack-tactical-radio",
+    "name": "Manpack Tactical Radio",
+    "type": "materials",
+    "price": 3000,
+    "weight": 4.98,
+    "gridSize": "2x3",
+    "imageUrl": "https://i.imgur.com/fbTZ3UV.png",
+    "category": "Disassembly Material",
+    "description": "A powerful tactical radio combining wideband and narrowband capabilities. Its software-defined architecture makes it highly configurable and compatible with modern encryption systems. Contains LAF encryption keys and advanced electronic components useful for constructing hacking devices.",
+    "addedAt": "2026-10-31T11:10:03.832Z"
   },
   {
     "id": "mechanical-pipette",
