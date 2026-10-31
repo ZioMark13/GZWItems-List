@@ -38,6 +38,11 @@
     "price": 90,
     "weight": 0.01
   },
+  "acetic-anhydride": {
+    "price": 75,
+    "weight": 1,
+    "gridSize": "1x2"
+  },
   "acetylene-cylinder": {
     "price": 56,
     "weight": 11.5
@@ -369,6 +374,11 @@
     "gridSize": "1x1",
     "imageUrl": "https://i.imgur.com/GqU9tjH.png"
   },
+  "multimeter": {
+    "price": 60,
+    "weight": 0.5,
+    "gridSize": "1x2"
+  },
   "noakon-water-0-6-l": {
     "price": 6
   },
@@ -392,6 +402,11 @@
   "ori-12": {
     "price": "$255",
     "weight": 0.1
+  },
+  "oscilloscope": {
+    "price": 150,
+    "gridSize": "2x3",
+    "imageUrl": "https://i.imgur.com/k2VveRE.png"
   },
   "paracetamol": {
     "price": 1,
