@@ -195,6 +195,11 @@
     "gridSize": "2x2",
     "weight": 1
   },
+  "electronic-warfare-configuration-drive": {
+    "price": 12800,
+    "weight": 0.08,
+    "gridSize": "1x1"
+  },
   "emergency-suture-kit": {
     "price": 54,
     "weight": 0.2
