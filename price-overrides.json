@@ -178,6 +178,10 @@
   "cowboy-baked-beans": {
     "price": 11
   },
+  "cpu-card": {
+    "price": 600,
+    "gridSize": "1x1"
+  },
   "dark-star-iced-coffee": {
     "price": 6
   },
