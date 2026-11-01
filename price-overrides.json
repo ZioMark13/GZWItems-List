@@ -204,6 +204,11 @@
     "price": 54,
     "weight": 0.2
   },
+  "encryption-key-drive": {
+    "price": 9600,
+    "weight": 0.11,
+    "gridSize": "1x1"
+  },
   "energy-bar-nuts-and-fruits": {
     "hydration": "0",
     "price": 6
