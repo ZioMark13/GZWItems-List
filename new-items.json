@@ -23,6 +23,18 @@
     "addedAt": "2026-10-28T10:27:07.247Z"
   },
   {
+    "id": "advanced-hacking-tool",
+    "name": "Advanced Hacking Tool",
+    "type": "loot",
+    "price": 0,
+    "weight": 1,
+    "gridSize": "2x1",
+    "imageUrl": "https://i.imgur.com/OSiGuJM.png",
+    "category": "Hacking Tool",
+    "description": "An advanced electronic device built from specialized computing and communications hardware. Its improved processing capabilities allow it to interface with more sophisticated electronic security systems and exploit their vulnerabilities to bypass locking mechanisms.",
+    "addedAt": "2026-11-01T18:20:40.478Z"
+  },
+  {
     "id": "ammonium-chloride",
     "name": "Ammonium Chloride",
     "type": "materials",
@@ -79,6 +91,18 @@
     "category": "Disassembly Material",
     "description": "A powerful superscalar onboard computer capable of executing multiple instructions in parallel. Contains valuable flight logs and advanced electronic components useful for constructing hacking devices.",
     "addedAt": "2026-10-31T12:32:42.343Z"
+  },
+  {
+    "id": "basic-hacking-tool",
+    "name": "Basic Hacking Tool",
+    "type": "loot",
+    "price": 0,
+    "weight": 1,
+    "gridSize": "2x1",
+    "imageUrl": "https://i.imgur.com/K7uuIEw.png",
+    "category": "Hacking Tool",
+    "description": "A rudimentary electronic device assembled from readily available components and modified hardware. It can interface with basic electronic security systems and exploit common vulnerabilities to bypass their locking mechanisms.",
+    "addedAt": "2026-11-01T18:19:56.408Z"
   },
   {
     "id": "bromopyridine",
@@ -580,6 +604,17 @@
     "addedAt": "2026-10-28T10:29:00.727Z"
   },
   {
+    "id": "sarin-canister",
+    "name": "Sarin Canister",
+    "type": "loot",
+    "price": 12000,
+    "weight": 2,
+    "gridSize": "1x2",
+    "imageUrl": "https://i.ibb.co/WNmsL8Mv/20261101115658-1-icon-Copy.jpg",
+    "category": "Laboratory Supplies",
+    "addedAt": "2026-11-01T17:02:00.990Z"
+  },
+  {
     "id": "server-cpu",
     "name": "Server CPU",
     "type": "materials",
@@ -645,6 +680,17 @@
     "category": "Crafting Material",
     "description": "A specialized electronic module built around an application-specific integrated circuit (ASIC), designed to emulate, override, and spoof nearby wireless signatures and reproduce signal handshakes. An essential component for constructing a basic hacking tool.",
     "addedAt": "2026-10-31T01:08:17.788Z"
+  },
+  {
+    "id": "st1122-storage-computer",
+    "name": "ST1122 Storage Computer",
+    "type": "materials",
+    "weight": 8,
+    "gridSize": "3x2",
+    "imageUrl": "https://i.imgur.com/mKzcU0a.png",
+    "category": "Disassembly Material",
+    "description": "A rugged and reliable network storage system equipped with multiple SATA drives. Contains extensive records apparently collected for surveillance and blackmail, along with advanced electronic components useful for constructing hacking devices.",
+    "addedAt": "2026-11-01T16:57:09.331Z"
   },
   {
     "id": "stainless-steel-sheet",
