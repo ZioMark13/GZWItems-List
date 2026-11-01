@@ -307,6 +307,11 @@
   "kasem-chocolate-wafers": {
     "price": 2
   },
+  "laboratory-flask": {
+    "price": 30,
+    "weight": 0.3,
+    "gridSize": "2x1"
+  },
   "laf-artillery-data-log": {
     "price": 6400,
     "gridSize": "1x1"
