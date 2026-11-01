@@ -216,6 +216,16 @@
     "addedAt": "2026-10-30T12:18:59.454Z"
   },
   {
+    "id": "deep-space-observation-data-drive",
+    "name": "Deep-Space Observation Data Drive",
+    "type": "loot",
+    "weight": 0.08,
+    "imageUrl": "https://i.imgur.com/ygKERnm.png",
+    "category": "Tech",
+    "description": "A reinforced external hard drive containing extracted deep-space observation data and research notes.",
+    "addedAt": "2026-11-01T21:38:23.070Z"
+  },
+  {
     "id": "digital-synthesis-engine",
     "name": "Digital Synthesis Engine",
     "type": "materials",
@@ -358,6 +368,16 @@
     "category": "Production Material",
     "description": "A highly refined morphine base containing minimal impurities and suitable for advanced pharmaceutical production. Its refined composition makes it ideal for producing high-quality morphine solutions or pure heroin.",
     "addedAt": "2026-10-30T19:23:37.257Z"
+  },
+  {
+    "id": "high-speed-digital-processing-board",
+    "name": "High-Speed Digital Processing Board",
+    "type": "materials",
+    "weight": 0.1,
+    "imageUrl": "https://i.imgur.com/byiniDz.png",
+    "category": "Crafting Material",
+    "description": "A powerful digital processor board capable of performing multiple high-precision computations in parallel, with high-speed serial interfaces for rapid data transfer. An essential component for constructing a superior hacking tool.",
+    "addedAt": "2026-11-01T21:39:26.352Z"
   },
   {
     "id": "imsi-catcher",
@@ -569,6 +589,18 @@
     "imageUrl": "https://i.ibb.co/Sw9pDtfb/image.png",
     "description": "Water purified through boiling and condensation to remove impurities. Not intended for consumption, but ideal for use in opiate production.",
     "addedAt": "2026-10-26T21:37:14.445Z"
+  },
+  {
+    "id": "radar-signal-processor",
+    "name": "Radar Signal Processor",
+    "type": "materials",
+    "price": 4.5,
+    "weight": 15,
+    "gridSize": "3x3",
+    "imageUrl": "https://i.imgur.com/tYdqh40.png",
+    "category": "Disassembly Material",
+    "description": "A powerful processing unit designed to handle radar data and video signals. Its rugged construction allows it to operate as a standalone unit or as part of a larger computing system. Contains extremely valuable data on deep-space observations and advanced electronic components useful for constructing hacking devices.",
+    "addedAt": "2026-11-01T21:36:31.165Z"
   },
   {
     "id": "ram",
