@@ -202,6 +202,18 @@
     "addedAt": "2026-10-31T01:19:28.950Z"
   },
   {
+    "id": "drone-interceptor",
+    "name": "Drone Interceptor",
+    "type": "materials",
+    "price": 10000,
+    "weight": 1.3,
+    "gridSize": "3x4",
+    "imageUrl": "https://i.ibb.co/bMHGCxSF/image.png",
+    "category": "Electronics",
+    "description": "A specialized drone designed to intercept unauthorized small aircraft entering Midnight Sapphire airspace. Equipped with valuable electronics and AI-assisted targeting technology.",
+    "addedAt": "2026-11-01T00:20:00.933Z"
+  },
+  {
     "id": "electronic-warfare-configuration-drive",
     "name": "Electronic Warfare Configuration Drive",
     "type": "loot",
