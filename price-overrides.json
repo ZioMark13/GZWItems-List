@@ -249,6 +249,10 @@
     "price": 90,
     "weight": 0.01
   },
+  "fpga-module": {
+    "price": 600,
+    "gridSize": "2x1"
+  },
   "glass": {
     "price": 45,
     "gridSize": "3x3",
