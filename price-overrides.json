@@ -291,6 +291,10 @@
     "price": 2,
     "weight": 0.05
   },
+  "incriminating-phone-logs": {
+    "price": 6400,
+    "gridSize": "1x1"
+  },
   "industrial-solvent": {
     "imageUrl": "https://i.ibb.co/GDQSrrx/image.png"
   },
@@ -526,6 +530,10 @@
   },
   "spicy-thai-combat-meal": {
     "price": 17
+  },
+  "spoofing-asic-module": {
+    "price": 600,
+    "gridSize": "1x1"
   },
   "steel": {
     "price": 30,
