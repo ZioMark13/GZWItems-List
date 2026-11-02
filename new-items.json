@@ -434,6 +434,18 @@
     "addedAt": "2026-10-29T16:41:10.217Z"
   },
   {
+    "id": "low-quality-morphine-base",
+    "name": "Low-Quality Morphine Base",
+    "type": "loot",
+    "price": 2000,
+    "weight": 1,
+    "gridSize": "2x2",
+    "imageUrl": "https://i.imgur.com/cxiYDxc.png",
+    "category": "Production Material",
+    "description": "A low-quality morphine base extracted from opium gum. The presence of impurities limits its use to basic production processes, bit it can serve as a base for low-quality morphine solutions.",
+    "addedAt": "2026-11-02T10:23:00.915Z"
+  },
+  {
     "id": "manpack-tactical-radio",
     "name": "Manpack Tactical Radio",
     "type": "materials",
