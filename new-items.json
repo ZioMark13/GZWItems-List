@@ -35,6 +35,18 @@
     "addedAt": "2026-11-01T18:20:40.478Z"
   },
   {
+    "id": "ai-targeting-module",
+    "name": "AI Targeting Module",
+    "type": "materials",
+    "price": 15000,
+    "weight": 0.05,
+    "gridSize": "1x1",
+    "imageUrl": "https://i.ibb.co/TqcNMBKL/image.png",
+    "category": "Electronics",
+    "description": "An AI-assisted targeting module removed from a drone interceptor. Highly valuable on the black market.",
+    "addedAt": "2026-11-02T15:58:24.234Z"
+  },
+  {
     "id": "ammonium-chloride",
     "name": "Ammonium Chloride",
     "type": "materials",
@@ -783,6 +795,15 @@
     "category": "Laboratory Supplies",
     "description": "A box containing select surgical tools, pills, and materials. It is an emergency health pack provided to UN employees.",
     "addedAt": "2026-10-29T17:34:01.662Z"
+  },
+  {
+    "id": "unlra-field-terminal",
+    "name": "UNLRA Field Terminal",
+    "type": "materials",
+    "imageUrl": "https://i.ibb.co/1YP9w9Rj/UNLRA-Field-Terminal-inspect.webp",
+    "category": "Production Material",
+    "description": "A portable handheld computer used by UNLRA personnel for communication and data sharing in the field. Contains valuable intelligence on UNLRA operations and electronic components useful for constructing hacking devices.",
+    "addedAt": "2026-11-02T14:43:51.632Z"
   },
   {
     "id": "unlra-relief-manifest",
