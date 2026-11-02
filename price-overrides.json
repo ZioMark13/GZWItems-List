@@ -403,6 +403,10 @@
     "price": 4,
     "weight": 0.05
   },
+  "missile-guidance-circuit": {
+    "price": 15000,
+    "gridSize": "1x1"
+  },
   "morphine": {
     "price": 135,
     "weight": 0.1
@@ -555,6 +559,9 @@
   "spoofing-asic-module": {
     "price": 600,
     "gridSize": "1x1"
+  },
+  "st1122-storage-computer": {
+    "price": 3000
   },
   "steel": {
     "price": 30,
