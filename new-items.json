@@ -71,6 +71,19 @@
     "addedAt": "2026-10-26T21:38:21.843Z"
   },
   {
+    "id": "aniline",
+    "name": "Aniline",
+    "type": "materials",
+    "price": 30,
+    "weight": 0.05,
+    "gridSize": "1x1",
+    "imageUrl": "https://i.imgur.com/fiem5cN.png",
+    "category": "Production Material",
+    "description": "An aromatic amine widely used as a chemical intermediate in the synthesis of various organic compounds. Suitable for use in the production of stimulants.",
+    "trader": "labrat",
+    "addedAt": "2026-11-03T13:46:26.083Z"
+  },
+  {
     "id": "artillery-balistic-calculator",
     "name": "Artillery Balistic Calculator",
     "type": "materials",
@@ -117,6 +130,19 @@
     "addedAt": "2026-11-01T18:19:56.408Z"
   },
   {
+    "id": "bone-density-stimulant",
+    "name": "Bone Density Stimulant",
+    "type": "materials",
+    "price": 30,
+    "weight": 0.05,
+    "gridSize": "1x1",
+    "imageUrl": "https://i.imgur.com/QU6qpwf.png",
+    "category": "Production Material",
+    "description": "A specialized compound designed to promote osteoblast activity and accelerate the formation and mineralization of bone tissue. Suitable for use in the production of stimulants.",
+    "trader": "labrat",
+    "addedAt": "2026-11-03T13:48:35.998Z"
+  },
+  {
     "id": "bromopyridine",
     "name": "Bromopyridine",
     "type": "materials",
@@ -127,6 +153,19 @@
     "imageUrl": "https://i.ibb.co/xqm7Xt3d/image.png",
     "description": "A halogenated pyridine compound commonly used as a chemical intermediate in the synthesis of more complex organic substances. Suitable for use in the production of stimulants.",
     "addedAt": "2026-10-28T10:33:23.724Z"
+  },
+  {
+    "id": "chloroform",
+    "name": "Chloroform",
+    "type": "materials",
+    "price": 45,
+    "weight": 1,
+    "gridSize": "2x1",
+    "imageUrl": "https://i.imgur.com/N4QwtHb.png",
+    "category": "Production Material",
+    "description": "A volatile organic solvent whose vapors can have a narcotic effect. A common culprit in countless detective novels, it also has legitimate industrial and laboratory applications, as well as uses in heroin production.",
+    "trader": "labrat",
+    "addedAt": "2026-11-03T13:29:27.192Z"
   },
   {
     "id": "circuit-board",
@@ -260,6 +299,18 @@
     "addedAt": "2026-11-01T00:20:00.933Z"
   },
   {
+    "id": "edetate-disodium",
+    "name": "Edetate Disodium",
+    "type": "materials",
+    "weight": 0.05,
+    "gridSize": "1x1",
+    "imageUrl": "https://i.imgur.com/xx1QkSP.png",
+    "category": "Production Material",
+    "description": "EDTA is a powerful synthetic chelating agent that binds to metal ions in solution. Improper dosage can cause a potentially fatal drop in blood calcium levels. Its chelating properties also make it useful for purifying high-quality morphine solutions.",
+    "trader": "labrat",
+    "addedAt": "2026-11-03T13:31:54.207Z"
+  },
+  {
     "id": "electronic-warfare-configuration-drive",
     "name": "Electronic Warfare Configuration Drive",
     "type": "loot",
@@ -290,6 +341,32 @@
     "category": "Disassembly Material",
     "description": "A rugged external hard drive containing extracted LAF encryption keys, posing a serious threat to the security of their communications.",
     "addedAt": "2026-10-31T11:13:30.038Z"
+  },
+  {
+    "id": "ether",
+    "name": "Ether",
+    "type": "materials",
+    "price": 90,
+    "weight": 1.2,
+    "gridSize": "2x1",
+    "imageUrl": "https://i.imgur.com/LbKN7YE.png",
+    "category": "Production Material",
+    "description": "An organic solvent commonly used in chemical synthesis, drying, and purification processes. It can also be used to clean laboratory glassware and remove unwanted residues. Its solvent properties make it useful in the production of high-quality heroin.",
+    "trader": "labrat",
+    "addedAt": "2026-11-03T13:42:09.052Z"
+  },
+  {
+    "id": "ethyl-alcohol",
+    "name": "Ethyl Alcohol",
+    "type": "materials",
+    "price": 90,
+    "weight": 2.8,
+    "gridSize": "2x2",
+    "imageUrl": "https://i.imgur.com/7UfZ9wy.png",
+    "category": "Production Material",
+    "description": "A clear, flammable organic liquid with antiseptic and psychoactive properties. Commonly used as a solvent in a wide range of chemical processes, including the production of high-quality heroin. Not recommended for consumption.",
+    "trader": "labrat",
+    "addedAt": "2026-11-03T13:44:15.926Z"
   },
   {
     "id": "fabrics",
@@ -401,6 +478,32 @@
     "addedAt": "2026-11-01T21:39:26.352Z"
   },
   {
+    "id": "human-growth-hormone",
+    "name": "Human Growth Hormone",
+    "type": "materials",
+    "price": 30,
+    "weight": 0.05,
+    "gridSize": "1x1",
+    "imageUrl": "https://i.imgur.com/9D4k0cG.png",
+    "category": "Production Material",
+    "description": "A peptide hormone that stimulates tissue growth, protein synthesis, and cellular regeneration while influencing the body's metabolism. Suitable for use in the production of stimulants.",
+    "trader": "labrat",
+    "addedAt": "2026-11-03T13:54:00.777Z"
+  },
+  {
+    "id": "hydrochloric-acid",
+    "name": "Hydrochloric Acid",
+    "type": "materials",
+    "price": 150,
+    "weight": 2.7,
+    "gridSize": "2x2",
+    "imageUrl": "https://i.imgur.com/zh97l5l.png",
+    "category": "Production Material",
+    "description": "High-purity acid designed for trace analysis and other precision applications. Commonly used in environmental analysis, pharmaceutical manufacturing, and materials research. Its purity and strong acidic properties also make it suitable for use in the heroin purification process.",
+    "trader": "labrat",
+    "addedAt": "2026-11-03T13:40:15.435Z"
+  },
+  {
     "id": "imsi-catcher",
     "name": "IMSI Catcher",
     "type": "materials",
@@ -487,6 +590,44 @@
     "imageUrl": "https://i.ibb.co/pjnZfL3m/image.png",
     "description": "A mechanical pipette that makes laboratory work faster, safer, and more precise. No more sucking chemicals into a glass pipette by mouth. Useful for building and upgrading Hideout stations.",
     "addedAt": "2026-10-26T21:41:03.029Z"
+  },
+  {
+    "id": "methanol",
+    "name": "Methanol",
+    "type": "materials",
+    "price": 30,
+    "weight": 0.5,
+    "gridSize": "2x1",
+    "imageUrl": "https://i.imgur.com/LqQ8Hr4.png",
+    "category": "Production Material",
+    "description": "A simple alcohol widely used as a solvent and chemical feedstock in a variety of synthesis processes. Suitable for use in the production of stimulants.",
+    "trader": "labrat",
+    "addedAt": "2026-11-03T13:55:52.503Z"
+  },
+  {
+    "id": "methylene-blue",
+    "name": "Methylene Blue",
+    "type": "materials",
+    "price": 30,
+    "weight": 0.05,
+    "gridSize": "1x1",
+    "imageUrl": "https://i.imgur.com/GHktq99.png",
+    "category": "Production Material",
+    "description": "A bioactive compound capable of influencing cellular metabolism and mitochondrial function, with a long history of medical and laboratory use. Suitable for use in the production of stimulants.",
+    "trader": "labrat",
+    "addedAt": "2026-11-03T13:57:57.350Z"
+  },
+  {
+    "id": "methylparaben",
+    "name": "Methylparaben",
+    "type": "materials",
+    "price": 90,
+    "weight": 0.15,
+    "gridSize": "1x1",
+    "imageUrl": "https://i.imgur.com/1yHLSM9.png",
+    "category": "Production Material",
+    "description": "An organic compound commonly used as a preservative in the food, pharmaceutical, and cosmetics industries. Although generally considered safe, it can cause allergic reactions in some individuals. Its preservative properties also make it useful for stabilizing morphine solutions.",
+    "addedAt": "2026-11-03T13:33:51.847Z"
   },
   {
     "id": "microscope",
@@ -598,6 +739,19 @@
     "imageUrl": "https://i.ibb.co/r2HsQNqd/image.png",
     "description": "A key to storage shed at Phon Chai Farm.",
     "addedAt": "2026-10-28T10:35:41.205Z"
+  },
+  {
+    "id": "portable-satcom-terminal",
+    "name": "Portable SATCOM Terminal",
+    "type": "materials",
+    "price": 4500,
+    "weight": 12.2,
+    "gridSize": "3x3",
+    "imageUrl": "https://i.imgur.com/vthpPvp.png",
+    "category": "Disassembly Material",
+    "description": "A portable VSAT system providing high-speed satellite data communications. Easy to deploy and capable of high transmission rates, it provides a reliable platform for secure, difficult-to-trace communications. Contains extremely valuable uplink credentials and advanced electronic components useful for constructing hacking devices.",
+    "trader": "artisan",
+    "addedAt": "2026-11-03T13:23:00.331Z"
   },
   {
     "id": "power-supply",
@@ -725,6 +879,19 @@
     "addedAt": "2026-10-26T21:39:28.955Z"
   },
   {
+    "id": "sodium-carbonate",
+    "name": "Sodium Carbonate",
+    "type": "materials",
+    "price": 36,
+    "weight": 0.55,
+    "gridSize": "2x1",
+    "imageUrl": "https://i.imgur.com/GqqIKDq.png",
+    "category": "Production Material",
+    "description": "Also known as soda ash, this alkaline compound has a wide range of uses, from laundry and household cleaning to glass manufacturing. Its chemical properties also make it useful during the precipitation stage of heroin production.",
+    "trader": "labrat",
+    "addedAt": "2026-11-03T13:37:38.298Z"
+  },
+  {
     "id": "soldering-iron",
     "name": "Soldering Iron",
     "type": "materials",
@@ -837,6 +1004,19 @@
     "category": "Building Material",
     "description": "A vapor lamp that emits light within a very narrow spectral range, making it a useful light source for high precision analysis. Useful for building and upgrading Hideout stations.",
     "addedAt": "2026-10-29T17:41:37.305Z"
+  },
+  {
+    "id": "vitamin-b12",
+    "name": "Vitamin B12",
+    "type": "materials",
+    "price": 30,
+    "weight": 0.25,
+    "gridSize": "1x1",
+    "imageUrl": "https://i.imgur.com/ifSNbIx.png",
+    "category": "Production Material",
+    "description": "An essential vitamin involved in red blood cell formation, DNA synthesis, and normal nervous system function. Suitable for use in the production of stimulants.",
+    "trader": "labrat",
+    "addedAt": "2026-11-03T13:50:59.297Z"
   },
   {
     "id": "water-pump",
