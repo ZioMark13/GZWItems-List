@@ -348,6 +348,15 @@
     "addedAt": "2026-10-26T21:34:59.928Z"
   },
   {
+    "id": "glucose",
+    "name": "Glucose",
+    "type": "materials",
+    "imageUrl": "https://i.ibb.co/4Z4VfRqS/image.png",
+    "category": "Production Material",
+    "description": "A simple sugar that serves as a major source of energy for human cells. This chemical-grade glucose is intended for laboratory use rather than direct consumption. Suitable for use in the production of stimulants.",
+    "addedAt": "2026-11-03T01:17:44.537Z"
+  },
+  {
     "id": "gray-heroin",
     "name": "Gray Heroin",
     "type": "materials",
