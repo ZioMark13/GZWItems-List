@@ -189,6 +189,11 @@
   "dark-star-iced-coffee": {
     "price": 6
   },
+  "deep-space-observation-data-drive": {
+    "price": 12000,
+    "weight": 0.08,
+    "gridSize": "1x1"
+  },
   "dynamo": {
     "price": 150,
     "gridSize": "2x2",
@@ -228,6 +233,11 @@
   "flexible-splint": {
     "price": 10,
     "weight": 0.13
+  },
+  "flight-data-drive": {
+    "price": 9600,
+    "gridSize": "1x1",
+    "trader": "vulture"
   },
   "fort-narith-garage-office-key": {
     "price": 90,
