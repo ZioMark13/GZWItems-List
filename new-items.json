@@ -558,6 +558,19 @@
     "addedAt": "2026-10-29T16:41:10.217Z"
   },
   {
+    "id": "last-line-defense-container",
+    "name": "Last Line Defense Container",
+    "type": "loot",
+    "price": 15000,
+    "weight": 8,
+    "gridSize": "3x2",
+    "imageUrl": "https://i.ibb.co/Fq5b3zKM/image.png",
+    "category": "Valuables",
+    "description": "A container with canisters of an extremely potent nerve agent, intended as a last-resort security measure at RLSL-1. The instructions on the container read: \"In case of imminent loss of facility control, open the contents near the air-conditioning intakes.\"",
+    "trader": "turncoat",
+    "addedAt": "2026-11-03T21:02:55.199Z"
+  },
+  {
     "id": "low-quality-morphine-base",
     "name": "Low-Quality Morphine Base",
     "type": "loot",
