@@ -199,6 +199,10 @@
     "gridSize": "2x2",
     "weight": 3
   },
+  "edetate-disodium": {
+    "price": 75,
+    "trader": "labrat"
+  },
   "electrical-parts": {
     "price": 60,
     "gridSize": "2x2",
@@ -519,6 +523,13 @@
   },
   "r-438-barrier-t": {
     "price": 48000
+  },
+  "radioisotope-fuel-cell": {
+    "price": 15000,
+    "weight": 16,
+    "gridSize": "2x3",
+    "imageUrl": "https://i.ibb.co/KxxKRtzy/image.png",
+    "trader": "turncoat"
   },
   "refrigerant": {
     "price": 45,
