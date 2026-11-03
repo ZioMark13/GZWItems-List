@@ -272,6 +272,12 @@
     "gridSize": "3x3",
     "weight": 4
   },
+  "glucose": {
+    "price": 15,
+    "weight": 1,
+    "gridSize": "1x2",
+    "trader": "labrat"
+  },
   "graphics-card": {
     "price": 150,
     "gridSize": "2x1",
@@ -528,6 +534,10 @@
   },
   "rugged-military-tablet": {
     "price": 1240
+  },
+  "saline": {
+    "imageUrl": "https://i.imgur.com/B1vlvIM.png",
+    "trader": "labrat"
   },
   "sawmill-office-key": {
     "price": 59,
