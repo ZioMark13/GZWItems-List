@@ -717,6 +717,16 @@
     "addedAt": "2026-10-29T16:39:34.890Z"
   },
   {
+    "id": "oven-controlled-crystal-oscillator",
+    "name": "Oven-Controlled Crystal Oscillator",
+    "type": "materials",
+    "weight": 0.01,
+    "imageUrl": "https://i.imgur.com/8d7O62g.png",
+    "category": "Crafting Material",
+    "description": "A precision timing component that maintains an extremely stable frequency, enabling precisely timed signal injection attacks against cryptographic locks. An essential component for constructing a superior hacking tool.",
+    "addedAt": "2026-11-03T14:27:14.106Z"
+  },
+  {
     "id": "pc-fan",
     "name": "PC Fan",
     "type": "materials",
@@ -788,6 +798,15 @@
     "category": "Disassembly Material",
     "description": "A powerful processing unit designed to handle radar data and video signals. Its rugged construction allows it to operate as a standalone unit or as part of a larger computing system. Contains extremely valuable data on deep-space observations and advanced electronic components useful for constructing hacking devices.",
     "addedAt": "2026-11-01T21:36:31.165Z"
+  },
+  {
+    "id": "radioisotope-fuel-cell",
+    "name": "Radioisotope Fuel Cell",
+    "type": "materials",
+    "weight": 16,
+    "category": "Disassembly Material",
+    "description": "A fuel cell used in a radioisotope thermoelectric generator, which converts heat from radioactive decay into electricity. The contained radioactive material can be extracted.",
+    "addedAt": "2026-11-03T14:37:08.352Z"
   },
   {
     "id": "ram",
@@ -992,6 +1011,16 @@
     "category": "Tech",
     "description": "An external hard drive containing sensitive UNLRA communication logs, evacuation data, and operational protocols.",
     "addedAt": "2026-10-30T16:16:22.811Z"
+  },
+  {
+    "id": "uplink-credentials-drive",
+    "name": "Uplink Credentials Drive",
+    "type": "loot",
+    "weight": 0.08,
+    "imageUrl": "https://i.imgur.com/y3KmWbT.png",
+    "category": "Tech",
+    "description": "A reinforced external hard drive containing extracted uplink credentials and sensitive communication logs.",
+    "addedAt": "2026-11-03T14:25:51.272Z"
   },
   {
     "id": "vapor-lamp",
