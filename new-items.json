@@ -516,6 +516,19 @@
     "addedAt": "2026-10-31T00:58:02.577Z"
   },
   {
+    "id": "incriminating-data-drive",
+    "name": "Incriminating Data Drive",
+    "type": "loot",
+    "price": 9600,
+    "weight": 0.11,
+    "gridSize": "1x1",
+    "imageUrl": "https://i.imgur.com/DyEXrtM.png",
+    "category": "Tech",
+    "description": "A rugged external hard drive containing data extracted from Midnight Sapphire storage systems, including video recordings from hidden cameras and staff communication logs.",
+    "trader": "vulture",
+    "addedAt": "2026-11-04T01:54:27.227Z"
+  },
+  {
     "id": "incriminating-phone-logs",
     "name": "Incriminating Phone Logs",
     "type": "loot",
