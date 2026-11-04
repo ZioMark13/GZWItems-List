@@ -538,8 +538,8 @@
     "addedAt": "2026-10-28T10:30:53.581Z"
   },
   {
-    "id": "laf-artillery-data-log",
-    "name": "LAF Artillery Data Log",
+    "id": "laf-artillery-data-logs",
+    "name": "LAF Artillery Data Logs",
     "type": "loot",
     "weight": 0.24,
     "imageUrl": "https://i.imgur.com/Z73Bt8d.png",
