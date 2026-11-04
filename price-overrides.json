@@ -450,7 +450,8 @@
   "multimeter": {
     "price": 60,
     "weight": 0.5,
-    "gridSize": "1x2"
+    "gridSize": "1x2",
+    "imageUrl": "https://i.ibb.co/qM2fb1Qt/image.png"
   },
   "noakon-water-0-6-l": {
     "price": 6
