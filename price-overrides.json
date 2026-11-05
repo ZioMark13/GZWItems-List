@@ -171,8 +171,9 @@
   },
   "construction-material": {
     "price": 15,
-    "gridSize": "3x3",
-    "weight": 10
+    "gridSize": "2x2",
+    "weight": 2,
+    "trader": "artisan"
   },
   "copper": {
     "price": 30,
@@ -230,9 +231,21 @@
     "price": "$219",
     "weight": 0.1
   },
+  "fabrics": {
+    "price": 15,
+    "weight": 1,
+    "gridSize": "1x3",
+    "trader": "artisan"
+  },
   "fenethylline": {
     "price": 29,
     "weight": 0.15
+  },
+  "fine-metal-mesh": {
+    "price": 75,
+    "weight": 0.5,
+    "gridSize": "2x1",
+    "trader": "artisan"
   },
   "flexible-splint": {
     "price": 10,
@@ -273,8 +286,9 @@
   },
   "glass": {
     "price": 45,
-    "gridSize": "3x3",
-    "weight": 4
+    "gridSize": "2x2",
+    "weight": 1,
+    "trader": "artisan"
   },
   "glucose": {
     "price": 15,
@@ -429,7 +443,10 @@
     "trader": "turncoat"
   },
   "missile-seeker-head": {
-    "price": 10000
+    "price": 12000,
+    "weight": 3,
+    "gridSize": "2x2",
+    "trader": "turncoat"
   },
   "morphine": {
     "price": 135,
@@ -538,8 +555,9 @@
   },
   "refrigerant": {
     "price": 45,
-    "weight": 3,
-    "gridSize": "3x2"
+    "weight": 1.5,
+    "gridSize": "1x2",
+    "trader": "artisan"
   },
   "retractable-tourniquet": {
     "price": 7,
@@ -602,11 +620,18 @@
   "st1122-storage-computer": {
     "price": 3000
   },
+  "stainless-steel-sheet": {
+    "price": 45,
+    "weight": 1,
+    "gridSize": "2x1",
+    "trader": "artisan"
+  },
   "steel": {
     "price": 30,
-    "weight": 4.4,
-    "gridSize": "4x2",
-    "imageUrl": "https://i.ibb.co/gL27nSnP/image.png"
+    "weight": 1,
+    "gridSize": "2x1",
+    "imageUrl": "https://i.ibb.co/gL27nSnP/image.png",
+    "trader": "artisan"
   },
   "strelets-m-tablet": {
     "weight": 1.4
@@ -645,6 +670,11 @@
     "price": 59,
     "weight": 0.01
   },
+  "water-pump": {
+    "weight": 10,
+    "gridSize": "3x2",
+    "trader": "artisan"
+  },
   "white-orchid-crystal-water-2-l": {
     "price": 24
   },
@@ -653,8 +683,9 @@
   },
   "wood": {
     "price": 15,
-    "weight": 3,
-    "gridSize": "4x1",
-    "imageUrl": "https://i.ibb.co/TqLpKgHH/image.png"
+    "weight": 0.5,
+    "gridSize": "3x1",
+    "imageUrl": "https://i.ibb.co/TqLpKgHH/image.png",
+    "trader": "artisan"
   }
 }
