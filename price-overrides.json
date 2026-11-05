@@ -77,7 +77,8 @@
   },
   "avionics-processor-board": {
     "price": 900,
-    "gridSize": "2x2"
+    "gridSize": "1x1",
+    "trader": "artisan"
   },
   "azart-p1-radio": {
     "price": 1000,
@@ -177,8 +178,9 @@
   },
   "copper": {
     "price": 30,
-    "gridSize": "3x3",
-    "weight": 3
+    "gridSize": "1x1",
+    "weight": 0.5,
+    "trader": "artisan"
   },
   "cowboy-baked-beans": {
     "price": 11
@@ -206,8 +208,9 @@
   },
   "electrical-parts": {
     "price": 60,
-    "gridSize": "2x2",
-    "weight": 1
+    "gridSize": "1x1",
+    "weight": 0.5,
+    "trader": "artisan"
   },
   "electronic-warfare-configuration-drive": {
     "price": 12800,
@@ -420,8 +423,9 @@
   },
   "mechanical-parts": {
     "price": 60,
-    "weight": 1,
-    "gridSize": "2x2"
+    "weight": 0.5,
+    "gridSize": "1x1",
+    "trader": "artisan"
   },
   "mechanical-pipette": {
     "weight": 0.13,
@@ -526,9 +530,10 @@
   },
   "plumbing-parts": {
     "price": 60,
-    "weight": 1,
-    "gridSize": "2x2",
-    "imageUrl": "https://i.ibb.co/B5GKQfvG/image.png"
+    "weight": 0.5,
+    "gridSize": "1x1",
+    "imageUrl": "https://i.ibb.co/B5GKQfvG/image.png",
+    "trader": "artisan"
   },
   "potassium-iodide": {
     "price": 36,
