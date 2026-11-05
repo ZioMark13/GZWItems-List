@@ -424,8 +424,12 @@
     "weight": 0.05
   },
   "missile-guidance-circuit": {
-    "price": 15000,
-    "gridSize": "1x1"
+    "price": 16875,
+    "gridSize": "1x1",
+    "trader": "turncoat"
+  },
+  "missile-seeker-head": {
+    "price": 10000
   },
   "morphine": {
     "price": 135,
