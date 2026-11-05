@@ -721,6 +721,19 @@
     "addedAt": "2026-10-26T21:28:08.821Z"
   },
   {
+    "id": "nerve-gas-canister",
+    "name": "Nerve Gas Canister",
+    "type": "loot",
+    "price": 40000,
+    "weight": 2,
+    "gridSize": "1x2",
+    "imageUrl": "https://i.ibb.co/Mxxtgmh5/image.png",
+    "category": "Valuables",
+    "description": "A camister containing a potent nerve agent extracted from a Last Line Defence Container. Extremely valuable on the black market.",
+    "trader": "turncoat",
+    "addedAt": "2026-11-05T11:37:42.738Z"
+  },
+  {
     "id": "opium-gum",
     "name": "Opium Gum",
     "type": "materials",
@@ -775,6 +788,19 @@
     "imageUrl": "https://i.ibb.co/r2HsQNqd/image.png",
     "description": "A key to storage shed at Phon Chai Farm.",
     "addedAt": "2026-10-28T10:35:41.205Z"
+  },
+  {
+    "id": "plutonium-canister",
+    "name": "Plutonium Canister",
+    "type": "loot",
+    "price": 40000,
+    "weight": 1,
+    "gridSize": "1x1",
+    "imageUrl": "https://i.ibb.co/wFvM7FpX/image.png",
+    "category": "Valuables",
+    "description": "A canister containing radioactive plutonium extracted from a radioisotope fuel cell. Extremely valuable on the black market.",
+    "trader": "turncoat",
+    "addedAt": "2026-11-05T11:33:39.183Z"
   },
   {
     "id": "portable-satcom-terminal",
