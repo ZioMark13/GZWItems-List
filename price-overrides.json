@@ -309,7 +309,8 @@
     "price": 21
   },
   "handheld-ecm-jammer": {
-    "price": 760
+    "price": 760,
+    "trader": "vulture"
   },
   "hangar-03-key": {
     "price": 59,
@@ -329,7 +330,8 @@
     "imageUrl": "https://i.imgur.com/9NlShnj.png"
   },
   "hgcs-30-uav-control-station": {
-    "price": 2080
+    "price": 2080,
+    "trader": "vulture"
   },
   "hotel-supply-closet-key-card": {
     "price": 90,
