@@ -60,7 +60,8 @@
     "price": 17
   },
   "an-pyq-10": {
-    "price": 3360
+    "price": 3360,
+    "trader": "vulture"
   },
   "aques-water-1-5-l": {
     "price": 16
